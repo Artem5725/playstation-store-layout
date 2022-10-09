@@ -85,3 +85,24 @@
     display: inline-block;
     margin-right: 8px;
 }
+
+@media screen and (max-width: 800px)
+{
+    .game-card__img{
+        width: 100%;
+    }
+
+    .game-card__price{
+        font-size: 20px;
+    }
+    .game-card__discount-price{
+        font-size: 16px;
+    }
+
+    .game-card__name{
+        font-size: 26px;
+    }
+    .game-card__platform{
+        font-size: 16px;
+    }
+}
