@@ -41,6 +41,7 @@ body, html {
 
 @media screen and (max-width: 800px)
 {
+    /* Todo изображения становятся более размытыми, может использовать 4x изображения?  */
     .gallery {
         grid-template-columns: 100%;
     }
