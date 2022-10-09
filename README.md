@@ -1,6 +1,3 @@
----
-permalink: /index.html
----
 # playstation-store-layout
 layout of playstation store
 
