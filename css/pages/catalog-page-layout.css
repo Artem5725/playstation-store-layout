@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.img-wrapper_sticky {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: black;
+    /* center SONY img */
+    text-align: center;
+    line-height: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.catalog-body {
+    background-color: #0060d1;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.header-line {
+    height: 96px;
+    padding: 32px 40px 0 52px;
+}
+
+.header-line__playstation-logo-img {
+    width: 42px;
+    height: 32px;
+    float: left;
+}
+
+
+/* Todo меня, выпадающее по нажатию на двойную стрелку вниз
+    стрелка должна после этого сменить направление*/
+.header-line__dropdown-menu-block {
+    display: none;
+}
+
+.header-line__dropdown-button {
+    display: block;
+    line-height: 14px;
+
+
+    color: white;
+}
