@@ -6,6 +6,8 @@
     <meta name="keywords" content="Store, Games">
     <meta name="description" content="Playstation Store">
     <link rel="stylesheet" href="css/common/game-card.css">
+    <link rel="stylesheet" href="css/common/lists.css">
+    <link rel="stylesheet" href="css/common/tags.css">
     <link rel="stylesheet" href="css/pages/catalog-page-layout.css">
     <link rel="stylesheet" href="css/pages/catalog-page-content.css">
     <!-- bootstrap -->
@@ -55,8 +57,80 @@
             <input class="nav-line__search-input" type="text" placeholder="Search">
         </div>
     </nav>
-    <section class="catalog-content-block">
-
+    <section class="catalog-content">
+        <div class="catalog-content__header"> All PS5 games</div> <!-- Похож на заголовок первого уровня -->
+        <div class="dropdown-list catalog-content__sort">
+            <!-- Todo: change to buttons and sort on click -->
+            <div class="dropdown-list__chosen">
+                <div class="dropdown-list__face dropdown-list__elem catalog-content__sort-elem"> New → Old</div>
+                <button type="button" class="dropdown-list__face-button"> todo стрелка</button>
+            </div>
+            <!-- В конец добавить иконку выпадающего списка -->
+            <div class="dropdown-list__elem catalog-content__sort-elem"> Old → New</div>
+            <div class="dropdown-list__elem catalog-content__sort-elem"> Latest first</div>
+            <div class="dropdown-list__elem catalog-content__sort-elem"> Most popular</div>
+        </div>
+        <div class="catalog-content__filter-panel">
+            <div class="select-list catalog-content__single-filter">
+                <div class="dropdown-list__chosen">
+                    <div class="dropdown-list__face catalog-content__single-filter-face"> Genre
+                        <!-- Через select --></div>
+                    <button type="button" class="dropdown-list__face-button"><i class="bi bi-chevron-down"></i></button>
+                </div>
+                <div class="select-list__elem catalog-content__single-filter-elem"> Action</div>
+                <div class="select-list__elem catalog-content__single-filter-elem"> Adventure</div>
+                <div class="select-list__elem catalog-content__single-filter-elem"> Shooter</div>
+                <div class="select-list__elem catalog-content__single-filter-elem"> RPG</div>
+                <div class="select-list__elem catalog-content__single-filter-elem"> Unique</div>
+                <div class="select-list__elem catalog-content__single-filter-elem"> Puzzle</div>
+                <div class="select-list__elem catalog-content__single-filter-elem"> Casual</div>
+                <div class="select-list__elem catalog-content__single-filter-elem"> Arcade</div>
+            </div>
+            <div class="select-list catalog-content__single-filter">
+                <div class="dropdown-list__chosen">
+                    <div class="dropdown-list__face catalog-content__single-filter-face"> Price
+                        <!-- Через select --></div>
+                    <button type="button" class="dropdown-list__face-button"><i class="bi bi-chevron-down"></i></button>
+                </div>
+                <div class="select-list__elem catalog-content__single-filter-elem"> $20.00 - 29.00</div>
+            </div>
+            <div class="select-list catalog-content__single-filter">
+                <div class="dropdown-list__chosen">
+                    <div class="dropdown-list__face catalog-content__single-filter-face"> Type
+                        <!-- Через select --></div>
+                    <button type="button" class="dropdown-list__face-button"><i class="bi bi-chevron-down"></i></button>
+                </div>
+                <div class="select-list__elem catalog-content__single-filter-elem"> Alpha</div>
+            </div>
+            <div class="select-list catalog-content__single-filter">
+                <div class="dropdown-list__chosen">
+                    <div class="dropdown-list__face catalog-content__single-filter-face"> Age rating
+                        <!-- Через select --></div>
+                    <button type="button" class="dropdown-list__face-button"><i class="bi bi-chevron-down"></i></button>
+                </div>
+                <div class="select-list__elem catalog-content__single-filter-elem"> 18+</div>
+            </div>
+            <button type="button" class="catalog-content__filter-button">PS5</button>
+            <button type="button" class="catalog-content__filter-button">PS4</button>
+            <button type="button" class="catalog-content__filter-button">Released</button>
+            <button type="button" class="catalog-content__filter-button">Coming soon</button>
+            <button type="button" class="catalog-content__filter-button">VR</button>
+            <div class="catalog-content__filter-items">716 items</div>
+        </div>
+        <div class="catalog-content__tags-panel">
+            <div class="tag">
+                <div class="tag__text catalog-content__single-tag"> ACTION</div>
+                <button class="tag__button"><i class="bi bi-x"></i></button>
+            </div>
+            <div class="tag">
+                <div class="tag__text catalog-content__single-tag"> ADVENTURE</div>
+                <button class="tag__button"><i class="bi bi-x"></i></button>
+            </div>
+        </div>
+        <button type="button" class="catalog-content__clean-tags-button">CLEAR ALL FILTERS</button>
+        <div>
+            <!-- Todo: gallery -->
+        </div>
     </section>
 </main>
 <footer></footer>

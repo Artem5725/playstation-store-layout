@@ -16,8 +16,9 @@ html, body {
 .img-wrapper_sticky {
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 0;
+    right: 0;
+    margin: auto;
     width: 120px;
     height: 40px;
     background-color: black;
@@ -76,9 +77,10 @@ html, body {
 
 .header-line__dropdown-button {
     position: absolute;
-    left: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
     top: 46px;
-    transform: translate(-50%, 0);
     width: 24px;
     height: 24px;
     padding: 5px 6px;

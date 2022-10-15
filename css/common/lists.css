@@ -1,0 +1,27 @@
+.dropdown-list {
+
+}
+
+.dropdown-list__chosen {
+
+}
+
+.dropdown-list__face { /* видимый элемент, после него стрелка вниз */
+    /* display: block;/* */
+}
+
+.dropdown-list__face-button {
+
+}
+
+.dropdown-list__elem {
+    /*display: none;/**/
+}
+
+.select-list {
+
+}
+
+.select-list__elem {
+
+}
