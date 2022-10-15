@@ -74,7 +74,7 @@ html, body {
     display: none;
 }
 
-.header-line__dropdown-button-wrapper {
+.header-line__dropdown-button {
     position: absolute;
     left: 50%;
     top: 46px;
@@ -82,10 +82,12 @@ html, body {
     width: 24px;
     height: 24px;
     padding: 5px 6px;
+    border: none;
+    background-color: transparent;
 }
 
 /* Todo fix icon sizes */
-.header-line__dropdown-button {
+.header-line__dropdown-icon {
     color: white;
 }
 
