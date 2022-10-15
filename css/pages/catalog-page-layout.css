@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -19,7 +20,6 @@ html, body {
     transform: translate(-50%, 0);
     width: 120px;
     height: 40px;
-    margin: 0 auto;
     background-color: black;
     /* center SONY img */
     text-align: center;
@@ -37,6 +37,7 @@ html, body {
 .header-line {
     height: 96px;
     padding: 32px 40px 0 52px;
+    position: relative;
 }
 
 .header-line__playstation-logo-img {
@@ -45,17 +46,44 @@ html, body {
     float: left;
 }
 
+.header-line__user-acc {
+    float: right;
+    padding: 4px;
+}
 
-/* Todo меня, выпадающее по нажатию на двойную стрелку вниз
+.header-line__user-img {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    float: left;
+}
+
+.header-line__user-name {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* Todo меню, выпадающее по нажатию на двойную стрелку вниз
     стрелка должна после этого сменить направление*/
 .header-line__dropdown-menu-block {
     display: none;
 }
 
+.header-line__dropdown-button-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 46px;
+    transform: translate(-50%, 0);
+    width: 24px;
+    height: 24px;
+    padding: 5px 6px;
+}
+
+/* Todo fix icon sizes */
 .header-line__dropdown-button {
-    display: block;
-    line-height: 14px;
-
-
     color: white;
 }
