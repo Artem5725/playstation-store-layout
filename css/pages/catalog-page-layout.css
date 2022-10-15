@@ -34,6 +34,7 @@ html, body {
     padding: 0;
 }
 
+/* header */
 .header-line {
     height: 96px;
     padding: 32px 40px 0 52px;
@@ -86,4 +87,103 @@ html, body {
 /* Todo fix icon sizes */
 .header-line__dropdown-button {
     color: white;
+}
+
+/* main */
+.main-section {
+    border: 2px solid;
+    background-color: #FFFFFF;
+    margin: 0 8px;
+    padding: 0 28px 80px;
+    border-radius: 20px;
+}
+
+.nav-line {
+    padding: 35px 16px 16px;
+    height: 91px;
+}
+
+
+.nav-line__store-logo {
+    float: left;
+    margin-top: -2px; /* fit img text to navigation bar text */
+    margin-right: 24px;
+    width: 184px;
+    height: 40px;
+}
+
+.nav-line__store-bag {
+    float: left;
+    width: 35px;
+    height: 39px;
+    margin-right: 5px;
+}
+
+.nav-line__store-text {
+    width: 144px;
+    height: 39px;
+}
+
+.nav-line__navigation-bar {
+    margin-right: 41px;
+    float: left;
+    display: flex;
+    gap: 8px;
+}
+
+.nav-line__navigation_elem {
+    padding: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.nav-line__navigation_elem:hover {
+    color: #000000;
+    background-color: #F4F7FA;
+}
+
+.nav-line__navigation_elem:active {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.nav-line__search-panel {
+    float: right;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #F4F7FA;
+}
+
+.nav-line__search-button {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.nav-line__search-icon {
+    font-size: 20px;
+    line-height: 20px;
+    color: #91969B;
+}
+
+.nav-line__search-input {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    width: 200px;
+}
+
+.nav-line__search-input:focus {
+    width: 500px;
+    transition: width 0.5s;
+    outline: none;
 }
