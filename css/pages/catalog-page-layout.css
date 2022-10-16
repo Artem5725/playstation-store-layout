@@ -141,20 +141,8 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     line-height: 16px;
-    color: #000000;
-    background-color: #FFFFFF;
-    border-radius: 8px;
 }
 
-.nav-line__navigation_elem:hover {
-    color: #000000;
-    background-color: #F4F7FA;
-}
-
-.nav-line__navigation_elem:active {
-    color: #FFFFFF;
-    background-color: #000000;
-}
 
 .nav-line__search-panel {
     float: right;

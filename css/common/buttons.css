@@ -1,0 +1,15 @@
+.button-elem{
+    border-radius: 8px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.button-elem:hover {
+    color: #000000;
+    background-color: #F4F7FA;
+}
+
+.button-elem:active {
+    color: #FFFFFF;
+    background-color: #000000;
+}
