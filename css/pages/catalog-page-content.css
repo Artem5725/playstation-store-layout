@@ -1,0 +1,90 @@
+/* Wrapper for content after nav */
+.catalog-content {
+    clear: both;
+    padding: 21px 4px 39px; /* 32 - 28 = 4px left/right */
+    border: 2px dashed;
+}
+
+.catalog-content__header {
+    float: left;
+    margin-left: 12px; /* 44 - 32 */
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+
+}
+
+.catalog-content__sort {
+    float: right;
+    display: block;
+    margin-right: 12px;
+    margin-top: 45px;
+    height: 36px;
+    background-color: #FFFFFF;
+}
+
+.catalog-content__sort-elem {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    height: 36px;
+    text-align: left;
+    padding: 8px;
+    border: none;
+}
+
+.catalog-content__sort-button {
+    background-color: inherit;
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    width: 16px;
+    height: 36px;
+}
+
+.catalog-content__sort-content {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #FFFFFF;
+}
+
+.catalog-content__sort-elem-content { /* face elem don't take 100% */
+    width: 100%;
+}
+
+.catalog-content__filter-panel {
+    clear: both;
+}
+
+.catalog-content__single-filter {
+
+}
+
+.catalog-content__single-filter-face {
+
+}
+
+.catalog-content__single-filter-elem {
+
+}
+
+.catalog-content__filter-button {
+
+}
+
+.catalog-content__filter-items {
+
+}
+
+.catalog-content__tags-panel {
+
+}
+
+.catalog-content__single-tag {
+
+}
+
+.catalog-content__clean-tags-button {
+
+}

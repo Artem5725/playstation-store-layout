@@ -1,0 +1,39 @@
+.dropdown-list__face {
+    margin-right: 6px;
+    float: left;
+}
+
+.dropdown-list__face-button {
+    float: left;
+}
+
+/* Use js and onclick */
+.dropdown-list_hoverable_from-bot-slide:hover .dropdown-list__content_from-bot-slide { /* dropdown-list_hoverable_from-bot-slide drops on hover */
+    top: 0;
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.dropdown-list__content { /* for js hide script */
+    clear: both;
+    z-index: 1;
+}
+
+.dropdown-list__content_from-bot-slide {
+    position: relative;
+    height: fit-content;
+    top: 100%;
+    opacity: 0;
+}
+
+.dropdown-list__elem {
+    display: block;
+}
+
+.select-list {
+
+}
+
+.select-list__elem {
+
+}
