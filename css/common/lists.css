@@ -30,10 +30,14 @@
     display: block;
 }
 
-.select-list {
 
+.select-list__elem-checkbox {
+    display: block;
+    float: left;
+    margin-right: 8px;
 }
 
-.select-list__elem {
-
+.select-list__elem-label {
+    display: block;
+    float: left;
 }

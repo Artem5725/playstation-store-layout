@@ -87,26 +87,63 @@
 
 
         <div class="catalog-content__filter-panel">
-            <div class="select-list catalog-content__single-filter">
-                <div class="dropdown-list__chosen">
-                    <div class="dropdown-list__face catalog-content__single-filter-face"> Genre
-                        <!-- Через select --></div>
-                    <button type="button" class="dropdown-list__face-button"><i class="bi bi-chevron-down"></i></button>
+
+            <div class="catalog-content__single-filter">
+                <div class="dropdown-list__face catalog-content__sort-elem"> Genre</div>
+                <button onclick="show_list(this);" type="button"
+                        class="dropdown-list__face-button catalog-content__sort-button"><i
+                        class="bi bi-chevron-down"></i></button>
+                <div id="filter-genre" onmouseleave="hide_list(this);"
+                     class="dropdown-list__content dropdown-list__content_from-bot-slide catalog-content__sort-content">
+                    <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
+                        <input id="action" type="checkbox" class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
+                               value="Action">
+                        <label for="action" class="select-list__elem-label catalog-content__filter-elem-label">Action</label>
+                    </div>
+                    <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
+                        <input id="adventure" type="checkbox" class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
+                               value="Adventure">
+                        <label for="adventure" class="select-list__elem-label catalog-content__filter-elem-label">Adventure</label>
+                    </div>
+                    <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
+                        <input id="shooter" type="checkbox" class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
+                               value="Shooter">
+                        <label for="shooter" class="select-list__elem-label catalog-content__filter-elem-label">Shooter</label>
+                    </div>
+                    <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
+                        <input id="rpg" type="checkbox" class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
+                               value="RPG">
+                        <label for="rpg" class="select-list__elem-label catalog-content__filter-elem-label">RPG</label>
+                    </div>
+                    <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
+                        <input id="unique" type="checkbox" class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
+                               value="Unique">
+                        <label for="unique" class="select-list__elem-label catalog-content__filter-elem-label">Unique</label>
+                    </div>
+                    <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
+                        <input id="puzzle" type="checkbox" class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
+                               value="Puzzle">
+                        <label for="puzzle" class="select-list__elem-label catalog-content__filter-elem-label">Puzzle</label>
+                    </div>
+                    <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
+                        <input id="casual" type="checkbox" class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
+                               value="Casual">
+                        <label for="casual" class="select-list__elem-label catalog-content__filter-elem-label">Casual</label>
+                    </div>
+                    <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
+                        <input id="arcade" type="checkbox" class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
+                               value="Arcade">
+                        <label for="arcade" class="select-list__elem-label catalog-content__filter-elem-label">Arcade</label>
+                    </div>
                 </div>
-                <div class="select-list__elem catalog-content__single-filter-elem"> Action</div>
-                <div class="select-list__elem catalog-content__single-filter-elem"> Adventure</div>
-                <div class="select-list__elem catalog-content__single-filter-elem"> Shooter ShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooterShooter</div>
-                <div class="select-list__elem catalog-content__single-filter-elem"> RPG</div>
-                <div class="select-list__elem catalog-content__single-filter-elem"> Unique</div>
-                <div class="select-list__elem catalog-content__single-filter-elem"> Puzzle</div>
-                <div class="select-list__elem catalog-content__single-filter-elem"> Casual</div>
-                <div class="select-list__elem catalog-content__single-filter-elem"> Arcade</div>
             </div>
+
             <div class="select-list catalog-content__single-filter">
                 <div class="dropdown-list__chosen">
                     <div class="dropdown-list__face catalog-content__single-filter-face"> Price
                         <!-- Через select --></div>
-                    <button type="button" class="dropdown-list__face-button"><i class="bi bi-chevron-down"></i></button>
+                    <button type="button" class="dropdown-list__face-button"><i class="bi bi-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="select-list__elem catalog-content__single-filter-elem"> $20.00 - 29.00</div>
             </div>
@@ -114,7 +151,8 @@
                 <div class="dropdown-list__chosen">
                     <div class="dropdown-list__face catalog-content__single-filter-face"> Type
                         <!-- Через select --></div>
-                    <button type="button" class="dropdown-list__face-button"><i class="bi bi-chevron-down"></i></button>
+                    <button type="button" class="dropdown-list__face-button"><i class="bi bi-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="select-list__elem catalog-content__single-filter-elem"> Alpha</div>
             </div>
@@ -122,7 +160,8 @@
                 <div class="dropdown-list__chosen">
                     <div class="dropdown-list__face catalog-content__single-filter-face"> Age rating
                         <!-- Через select --></div>
-                    <button type="button" class="dropdown-list__face-button"><i class="bi bi-chevron-down"></i></button>
+                    <button type="button" class="dropdown-list__face-button"><i class="bi bi-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="select-list__elem catalog-content__single-filter-elem"> 18+</div>
             </div>
@@ -133,6 +172,8 @@
             <button type="button" class="catalog-content__filter-button">VR</button>
             <div class="catalog-content__filter-items">716 items</div>
         </div>
+
+
         <div class="catalog-content__tags-panel">
             <div class="tag">
                 <div class="tag__text catalog-content__single-tag"> ACTION</div>
@@ -144,6 +185,8 @@
             </div>
         </div>
         <button type="button" class="catalog-content__clean-tags-button">CLEAR ALL FILTERS</button>
+
+
         <div>
             <!-- Todo: gallery -->
         </div>
