@@ -1,7 +1,8 @@
 .button-elem{
-    border-radius: 8px;
+    border-radius: 8px / 10px;
     color: #000000;
     background-color: #FFFFFF;
+    white-space: nowrap;
 }
 
 .button-elem:hover {
