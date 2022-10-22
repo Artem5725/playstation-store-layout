@@ -1,6 +1,12 @@
+.dropdown-list__face-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .dropdown-list__face {
     margin-right: 6px;
     float: left;
+    white-space: nowrap;
 }
 
 .dropdown-list__face-button {
@@ -15,14 +21,16 @@
 }
 
 .dropdown-list__content { /* for js hide script */
+    display: none;
     clear: both;
     z-index: 1;
+    width: max-content;
 }
 
 .dropdown-list__content_from-bot-slide {
-    position: relative;
+    position: absolute;
     height: fit-content;
-    top: 100%;
+    top: 200%;
     opacity: 0;
 }
 
@@ -30,10 +38,14 @@
     display: block;
 }
 
-.select-list {
 
+.select-list__elem-checkbox {
+    display: block;
+    float: left;
+    margin-right: 8px;
 }
 
-.select-list__elem {
-
+.select-list__elem-label {
+    display: block;
+    float: left;
 }
