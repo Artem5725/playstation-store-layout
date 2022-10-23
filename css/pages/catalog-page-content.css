@@ -59,6 +59,7 @@
     clear: both;
     margin-left: 12px;
     margin-right: 12px;
+    margin-bottom: 16px;
     height: 48px;
     border: 1px solid #E7ECF1;
     border-radius: 8px;
@@ -150,8 +151,10 @@
 }
 
 .catalog-content__tags-panel {
+    margin-left: 12px;
+    margin-right: 12px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 4px;
 }
