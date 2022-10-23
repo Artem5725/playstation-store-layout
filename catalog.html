@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
     <title>Title</title>
 </head>
-<body onload="basic_prepare_checkboxes()" class="catalog-body">
+<body onload="basic_prepare_filter_panel()" class="catalog-body">
 <script type="text/javascript" src="js/common/lists.js"></script>
 <script type="text/javascript" src="js/pages/tags-panel-management.js"></script>
 <div class="img-wrapper_sticky">
@@ -100,57 +100,57 @@
                 <div id="filter-genre" onmouseleave="hide_list(this);"
                      class="dropdown-list__content dropdown-list__content_from-bot-slide catalog-content__sort-content">
                     <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
-                        <input id="action" type="checkbox"
+                        <input id="action-single-filter" type="checkbox"
                                class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
                                value="Action">
-                        <label for="action"
+                        <label for="action-single-filter"
                                class="select-list__elem-label catalog-content__filter-elem-label">Action</label>
                     </div>
                     <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
-                        <input id="adventure" type="checkbox"
+                        <input id="adventure-single-filter" type="checkbox"
                                class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
                                value="Adventure">
-                        <label for="adventure" class="select-list__elem-label catalog-content__filter-elem-label">Adventure</label>
+                        <label for="adventure-single-filter" class="select-list__elem-label catalog-content__filter-elem-label">Adventure</label>
                     </div>
                     <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
-                        <input id="shooter" type="checkbox"
+                        <input id="shooter-single-filter" type="checkbox"
                                class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
                                value="Shooter">
-                        <label for="shooter"
+                        <label for="shooter-single-filter"
                                class="select-list__elem-label catalog-content__filter-elem-label">Shooter</label>
                     </div>
                     <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
-                        <input id="rpg" type="checkbox"
+                        <input id="rpg-single-filter" type="checkbox"
                                class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
                                value="RPG">
-                        <label for="rpg" class="select-list__elem-label catalog-content__filter-elem-label">RPG</label>
+                        <label for="rpg-single-filter" class="select-list__elem-label catalog-content__filter-elem-label">RPG</label>
                     </div>
                     <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
-                        <input id="unique" type="checkbox"
+                        <input id="unique-single-filter" type="checkbox"
                                class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
                                value="Unique">
-                        <label for="unique"
+                        <label for="unique-single-filter"
                                class="select-list__elem-label catalog-content__filter-elem-label">Unique</label>
                     </div>
                     <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
-                        <input id="puzzle" type="checkbox"
+                        <input id="puzzle-single-filter" type="checkbox"
                                class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
                                value="Puzzle">
-                        <label for="puzzle"
+                        <label for="puzzle-single-filter"
                                class="select-list__elem-label catalog-content__filter-elem-label">Puzzle</label>
                     </div>
                     <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
-                        <input id="casual" type="checkbox"
+                        <input id="casual-single-filter" type="checkbox"
                                class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
                                value="Casual">
-                        <label for="casual"
+                        <label for="casual-single-filter"
                                class="select-list__elem-label catalog-content__filter-elem-label">Casual</label>
                     </div>
                     <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
-                        <input id="arcade" type="checkbox"
+                        <input id="arcade-single-filter" type="checkbox"
                                class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
                                value="Arcade">
-                        <label for="arcade"
+                        <label for="arcade-single-filter"
                                class="select-list__elem-label catalog-content__filter-elem-label">Arcade</label>
                     </div>
                 </div>
@@ -166,10 +166,10 @@
                 <div id="filter-price" onmouseleave="hide_list(this);"
                      class="dropdown-list__content dropdown-list__content_from-bot-slide catalog-content__sort-content">
                     <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
-                        <input id="mid-price" type="checkbox"
+                        <input id="$20.00 - 29.00-single-filter" type="checkbox"
                                class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
                                value="$20.00 - 29.00">
-                        <label for="mid-price"
+                        <label for="$20.00 - 29.00-single-filter"
                                class="select-list__elem-label catalog-content__filter-elem-label">$20.00 - 29.00</label>
                     </div>
                 </div>
@@ -184,10 +184,10 @@
                 <div id="filter-type" onmouseleave="hide_list(this);"
                      class="dropdown-list__content dropdown-list__content_from-bot-slide catalog-content__sort-content">
                     <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
-                        <input id="alpha-type" type="checkbox"
+                        <input id="alpha-single-filter" type="checkbox"
                                class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
                                value="Alpha">
-                        <label for="alpha-type"
+                        <label for="alpha-single-filter"
                                class="select-list__elem-label catalog-content__filter-elem-label">Alpha</label>
                     </div>
                 </div>
@@ -202,54 +202,59 @@
                 <div id="filter-age" onmouseleave="hide_list(this);"
                      class="dropdown-list__content dropdown-list__content_from-bot-slide catalog-content__sort-content">
                     <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
-                        <input id="old-age" type="checkbox"
+                        <input id="18+-single-filter" type="checkbox"
                                class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
-                               value="Alpha">
-                        <label for="old-age"
+                               value="18+">
+                        <label for="18+-single-filter"
                                class="select-list__elem-label catalog-content__filter-elem-label">18+</label>
                     </div>
                 </div>
             </div>
             <div class="catalog-content_button-block">
                 <button type="button"
-                        class="button-elem catalog-content__filter-button">
+                        class="button-elem catalog-content__filter-button" value="PS5">
                     PS5
                 </button>
                 <button type="button"
-                        class="button-elem catalog-content__filter-button">
+                        class="button-elem catalog-content__filter-button" value="PS4">
                     PS4
                 </button>
             </div>
             <div class="catalog-content_small-vertical-line"></div>
             <div class="catalog-content_button-block">
                 <button type="button"
-                        class="button-elem catalog-content__filter-button">
+                        class="button-elem catalog-content__filter-button" value="Released">
                     Released
                 </button>
                 <button type="button"
-                        class="button-elem catalog-content__filter-button">
+                        class="button-elem catalog-content__filter-button" value="Coming soon">
                     Coming soon
                 </button>
             </div>
             <div class="catalog-content_small-vertical-line"></div>
             <div class="catalog-content_button-block">
-                <button type="button" class="button-elem catalog-content__filter-button">VR</button>
+                <button type="button" class="button-elem catalog-content__filter-button" value="VR">VR</button>
             </div>
-            <div class="catalog-content__filter-items"><output id="total-items"><!-- Todo set value after filter -->716</output> items</div>
+            <div class="catalog-content__filter-items">
+                <output id="total-items"><!-- Todo set value after filter -->716</output>
+                items
+            </div>
         </div>
 
 
-        <div class="catalog-content__tags-panel">
+        <div id="panel-tag" class="catalog-content__tags-panel">
             <!-- Todo add tags only after user select them -->
-            <div class="tag catalog-content__single-tag">
+            <!--<div class="tag catalog-content__single-tag">
                 <div class="catalog-content__single-tag-text"> ACTION</div>
-                <button class="catalog-content__single-tag-button"><i class="bi bi-x"></i></button>
+                <button value="Action" onclick="remove_tag_and_checkbox(this);" class="catalog-content__single-tag-button"><i
+                        class="bi bi-x"></i></button>
             </div>
             <div class="tag catalog-content__single-tag">
                 <div class="catalog-content__single-tag-text"> ADVENTURE</div>
-                <button class="catalog-content__single-tag-button"><i class="bi bi-x"></i></button>
-            </div>
-            <button type="button" class="catalog-content__clean-tags-button">CLEAR ALL FILTERS</button>
+                <button value="Adventure" onclick="remove_tag_and_checkbox(this);" class="catalog-content__single-tag-button"><i
+                        class="bi bi-x"></i></button>
+            </div>-->
+            <button onclick="remove_all_tags()" type="button" class="catalog-content__clean-tags-button">CLEAR ALL FILTERS</button>
         </div>
 
 
