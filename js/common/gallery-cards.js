@@ -1,0 +1,1 @@
+// Todo: add/delete cards in gallery

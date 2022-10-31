@@ -9,7 +9,7 @@ html, body {
     margin: 0;
     padding: 8px;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: black;
 }
 
@@ -18,6 +18,7 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 3;
     margin: auto;
     width: 120px;
     height: 40px;
@@ -32,14 +33,22 @@ html, body {
 .catalog-body {
     background-color: #0060d1;
     border-radius: 20px;
-    padding: 0;
+    padding: 0 8px 8px 8px;
 }
 
 /* header */
+.header-line__wrapper_sticky{
+    --sticky-top: 0;
+    margin: 0 -8px 0;
+    background-color: black;
+}
+
 .header-line {
     height: 96px;
     padding: 32px 40px 0 52px;
-    position: relative;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #0060d1;
 }
 
 .header-line__playstation-logo-img {
@@ -96,16 +105,23 @@ html, body {
 /* main */
 .main-section {
     background-color: #FFFFFF;
-    margin: 0 8px;
     padding: 0 28px 80px;
     border-radius: 20px;
 }
 
-.nav-line {
-    padding: 35px 16px 16px;
-    height: 91px;
+.nav-line__wrapper_sticky {
+    --sticky-top: 96px;
+    margin: 0 -28px 0;
+    background-color:  #0060d1;
 }
 
+.nav-line {
+    padding: 35px 44px 16px; /* 16 + 28, because of negative margin */
+    height: 91px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #FFFFFF;
+}
 
 .nav-line__store-logo {
     float: left;
@@ -174,7 +190,13 @@ html, body {
 }
 
 .nav-line__search-input:focus {
-    width: 500px;
+    width: 250px;
     transition: width 0.5s;
     outline: none;
+}
+
+.sticky-elem {
+    position: sticky;
+    top: var(--sticky-top);
+    z-index: 2;
 }

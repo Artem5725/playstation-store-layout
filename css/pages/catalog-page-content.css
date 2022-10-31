@@ -193,3 +193,15 @@
     line-height: 14px;
     color: #91969B;
 }
+
+/* variables for grid */
+:root {
+    --columns-max-width_width: 16%;
+    --columns-max-width_count: 6;
+    --columns-max-width_gap: 0.8%;
+    --columns-medium-width_width: 32%;
+    --columns-medium-width_count: 3;
+    --columns-medium-width_gap: 2%;
+    --columns-min-width_width: 100%;
+    --columns-min-width_gap: 0.5%;
+}

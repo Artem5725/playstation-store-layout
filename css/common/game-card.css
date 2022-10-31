@@ -2,6 +2,8 @@
     background-color: #FFFFFF;
     border-radius: 15px;
     padding: 12px 12px 20px 12px;
+    width: 100%;
+    height: auto;
 }
 
 .game-card:hover {
@@ -10,16 +12,21 @@
     background-color: #E7ECF1;
     transition: transform 0.5s;
     box-shadow: 0 0 5px black;
+    z-index: 5;
 }
 
 .game-card__img {
     border-radius: 15px;
     margin-bottom: 16px;
+    width: 100%;
+    height: auto;
 }
 
 .game-card__data {
-    width: 200px;
-    height: max-content;
+    width: 100%;
+    height: auto;
+    /*width: 200px;*/
+    /*height: max-content;*/
 }
 
 .game-card__price {
