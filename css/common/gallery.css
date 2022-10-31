@@ -1,0 +1,25 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(var(--columns-max-width_count), var(--columns-max-width_width));
+    grid-template-rows: repeat(2, auto);
+    grid-gap: var(--columns-max-width_gap);
+    justify-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat( var(--columns-medium-width_count), var(--columns-medium-width_width));
+        grid-gap: var(--columns-medium-width_gap);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /* Todo изображения становятся более размытыми, может использовать 4x изображения?  */
+    .gallery {
+        grid-template-columns: var(--columns-min-width_width);
+        grid-gap: var(--columns-min-width_gap);
+    }
+    .gallery .game-card{
+        max-width: 400px;
+    }
+}

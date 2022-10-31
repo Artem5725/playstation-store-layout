@@ -12,12 +12,14 @@ body, html {
 
 .body {
     padding-top: 160px;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 100%;
     width: 100%;
 }
 
 .content-container {
-    width: max-content;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -37,27 +39,16 @@ body, html {
     line-height: 20px;
     border-radius: 10px;
 }
-
 /*button width+ 35 + 80 = 135*/
 
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(5, max-content);
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 16px;
-}
-
-@media screen and (max-width: 1200px) {
-    .gallery {
-        grid-template-columns: repeat(3, max-content);
-    }
-}
-
-@media screen and (max-width: 800px)
-{
-    /* Todo изображения становятся более размытыми, может использовать 4x изображения?  */
-    .gallery {
-        grid-template-columns: 100%;
-    }
+/* variables for grid */
+:root {
+    --columns-max-width_width: 19%;
+    --columns-max-width_count: 5;
+    --columns-max-width_gap: 1.2%;
+    --columns-medium-width_width: 32%;
+    --columns-medium-width_count: 3;
+    --columns-medium-width_gap: 2%;
+    --columns-min-width_width: 100%;
+    --columns-min-width_gap: 0.3%;
 }

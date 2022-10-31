@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/common/lists.css">
     <link rel="stylesheet" href="css/common/tags.css">
     <link rel="stylesheet" href="css/common/buttons.css">
+    <link rel="stylesheet" href="css/common/gallery.css">
     <link rel="stylesheet" href="css/pages/catalog-page-layout.css">
     <link rel="stylesheet" href="css/pages/catalog-page-content.css">
     <!-- bootstrap -->
@@ -22,45 +23,48 @@
 <div class="img-wrapper_sticky">
     <img class="img_sticky" src="img/common/sony.svg" alt="Sony">
 </div>
-<header class="header-line">
-    <img class="header-line__playstation-logo-img" src="img/common/playstation-logo.svg" alt="Logo">
-    <div class="header-line__user-acc">
-        <img class="header-line__user-img" src="img/common/kodzima.png" alt="Account avatar">
-        <div class="header-line__user-name"> User123</div>
-    </div>
-    <!--  Todo hidden block -->
-    <div class="header-line__dropdown-menu-block">TODO</div>
-    <button type="button" class="header-line__dropdown-button">
-        <i onclick="<!-- Todo show hidden block -->" class="bi bi-chevron-double-down header-line__dropdown-icon"></i>
-    </button>
-</header>
+<div class="sticky-elem header-line__wrapper_sticky">
+    <header class="header-line sticky-elem">
+        <img class="header-line__playstation-logo-img" src="img/common/playstation-logo.svg" alt="Logo">
+        <div class="header-line__user-acc">
+            <img class="header-line__user-img" src="img/common/kodzima.png" alt="Account avatar">
+            <div class="header-line__user-name"> User123</div>
+        </div>
+        <!--  Todo hidden block -->
+        <div class="header-line__dropdown-menu-block">TODO</div>
+        <button type="button" class="header-line__dropdown-button">
+            <i onclick="<!-- Todo show hidden block -->"
+               class="bi bi-chevron-double-down header-line__dropdown-icon"></i>
+        </button>
+    </header>
+</div>
 <main class="main-section">
-    <nav class="nav-line">
-        <div class="nav-line__store-logo">
-            <img class="nav-line__store-bag"
-                 srcset="img/common/playstation-bag.png, img/common/playstation-bag@2x.png 2x"
-                 src="img/common/playstation-bag.png" alt="Bag icon">
-            <img class="nav-line__store-text"
-                 srcset="img/common/playstation-store.png, img/common/playstation-store@2x.png 2x"
-                 src="img/common/playstation-store.png" alt="Playstation Store">
-        </div>
-        <div class="nav-line__navigation-bar">
-            <a class="button-elem nav-line__navigation_elem" href="#">Latest</a>
-            <a class="button-elem nav-line__navigation_elem" href="#">Collections</a>
-            <a class="button-elem nav-line__navigation_elem" href="#">Deals</a>
-            <a class="button-elem nav-line__navigation_elem" href="#">PS5</a>
-            <a class="button-elem nav-line__navigation_elem" href="#">Subscriptions</a>
-            <a class="button-elem nav-line__navigation_elem" href="#">Browse</a>
-        </div>
-        <div class="nav-line__search-panel">
-            <button type="button" onclick="<!-- Todo searching -->" class="nav-line__search-button">
-                <i class="bi bi-search nav-line__search-icon"></i>
-            </button>
-            <input class="nav-line__search-input" type="text" placeholder="Search">
-        </div>
-    </nav>
-
-
+    <div class="sticky-elem nav-line__wrapper_sticky">
+        <nav class="nav-line sticky-elem"> <!-- Todo только навигационная линия должна быть sticky -->
+            <div class="nav-line__store-logo">
+                <img class="nav-line__store-bag"
+                     srcset="img/common/playstation-bag.png, img/common/playstation-bag@2x.png 2x"
+                     src="img/common/playstation-bag.png" alt="Bag icon">
+                <img class="nav-line__store-text"
+                     srcset="img/common/playstation-store.png, img/common/playstation-store@2x.png 2x"
+                     src="img/common/playstation-store.png" alt="Playstation Store">
+            </div>
+            <div class="nav-line__navigation-bar">
+                <a class="button-elem nav-line__navigation_elem" href="#">Latest</a>
+                <a class="button-elem nav-line__navigation_elem" href="#">Collections</a>
+                <a class="button-elem nav-line__navigation_elem" href="#">Deals</a>
+                <a class="button-elem nav-line__navigation_elem" href="#">PS5</a>
+                <a class="button-elem nav-line__navigation_elem" href="#">Subscriptions</a>
+                <a class="button-elem nav-line__navigation_elem" href="#">Browse</a>
+            </div>
+            <div class="nav-line__search-panel">
+                <button type="button" onclick="<!-- Todo searching -->" class="nav-line__search-button">
+                    <i class="bi bi-search nav-line__search-icon"></i>
+                </button>
+                <input class="nav-line__search-input" type="text" placeholder="Search">
+            </div>
+        </nav>
+    </div>
     <section class="catalog-content">
         <h1 class="catalog-content__header"> All PS5 games</h1>
 
@@ -110,7 +114,8 @@
                         <input id="adventure-single-filter" type="checkbox"
                                class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
                                value="Adventure">
-                        <label for="adventure-single-filter" class="select-list__elem-label catalog-content__filter-elem-label">Adventure</label>
+                        <label for="adventure-single-filter"
+                               class="select-list__elem-label catalog-content__filter-elem-label">Adventure</label>
                     </div>
                     <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
                         <input id="shooter-single-filter" type="checkbox"
@@ -123,7 +128,8 @@
                         <input id="rpg-single-filter" type="checkbox"
                                class="select-list__elem-checkbox catalog-content__filter-elem-checkbox"
                                value="RPG">
-                        <label for="rpg-single-filter" class="select-list__elem-label catalog-content__filter-elem-label">RPG</label>
+                        <label for="rpg-single-filter"
+                               class="select-list__elem-label catalog-content__filter-elem-label">RPG</label>
                     </div>
                     <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
                         <input id="unique-single-filter" type="checkbox"
@@ -254,12 +260,150 @@
                 <button value="Adventure" onclick="remove_tag_and_checkbox(this);" class="catalog-content__single-tag-button"><i
                         class="bi bi-x"></i></button>
             </div>-->
-            <button onclick="remove_all_tags()" type="button" class="catalog-content__clean-tags-button">CLEAR ALL FILTERS</button>
+            <button onclick="remove_all_tags()" type="button" class="catalog-content__clean-tags-button">CLEAR ALL
+                FILTERS
+            </button>
         </div>
 
 
-        <div>
-            <!-- Todo: gallery -->
+        <div class="gallery">
+            <!-- Todo: click on card must redirect to game page -->
+            <div class="game-card">
+                <img class="game-card__img" srcset="img/common/elden.png, img/common/elden@2x.png 2x"
+                     src="img/common/elden.png" alt="Elden Ring">
+                <div class="game-card__data">
+                    <div class="game-card__price"> € 69.99</div>
+                    <div class="game-card__name"> Elden Ring</div>
+                    <div class="game-card__platforms-list">
+                        <div class="game-card__platform"> PRE-ORDER</div>
+                        <div class="game-card__platform"> PS5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card">
+                <img class="game-card__img" srcset="img/common/kodzima.png, img/common/kodzima@2x.png 2x"
+                     src="img/common/kodzima.png" alt="Death Stranding">
+                <div class="game-card__data">
+                    <div class="game-card__price"> € 49.99</div>
+                    <div class="game-card__discount">
+                        <img srcset="img/main-page/discount.png, img/main-page/discount@2x.png 2x"
+                             src="img/main-page/discount.png" alt="Discount" class="game-card__discount-img">
+                        <div class="game-card__discount-price">10%</div>
+                    </div>
+                    <div class="game-card__name"> Death Stranding Director’s Cut Death Stranding Director’s Cut</div>
+                    <div class="game-card__platforms-list">
+                        <div class="game-card__platform"> PS5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card">
+                <img class="game-card__img" srcset="img/common/elden.png, img/common/elden@2x.png 2x"
+                     src="img/common/elden.png" alt="Elden Ring">
+                <div class="game-card__data">
+                    <div class="game-card__price"> € 69.99</div>
+                    <div class="game-card__name"> Elden Ring</div>
+                    <div class="game-card__platforms-list">
+                        <div class="game-card__platform"> PRE-ORDER</div>
+                        <div class="game-card__platform"> PS5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card">
+                <img class="game-card__img" srcset="img/common/kodzima.png, img/common/kodzima@2x.png 2x"
+                     src="img/common/kodzima.png" alt="Death Stranding">
+                <div class="game-card__data">
+                    <div class="game-card__price"> € 49.99</div>
+                    <div class="game-card__name"> Death Stranding Director’s Cut</div>
+                    <div class="game-card__platforms-list">
+                        <div class="game-card__platform"> PS5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card">
+                <img class="game-card__img" srcset="img/common/elden.png, img/common/elden@2x.png 2x"
+                     src="img/common/elden.png" alt="Elden Ring">
+                <div class="game-card__data">
+                    <div class="game-card__price"> € 69.99</div>
+                    <div class="game-card__discount">
+                        <img srcset="img/main-page/discount.png, img/main-page/discount@2x.png 2x"
+                             src="img/main-page/discount.png" alt="Discount" class="game-card__discount-img">
+                        <div class="game-card__discount-price">5%</div>
+                    </div>
+                    <div class="game-card__name"> Elden Ring</div>
+                    <div class="game-card__platforms-list">
+                        <div class="game-card__platform"> PRE-ORDER</div>
+                        <div class="game-card__platform"> PS5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card">
+                <img class="game-card__img" srcset="img/common/elden.png, img/common/elden@2x.png 2x"
+                     src="img/common/elden.png" alt="Elden Ring">
+                <div class="game-card__data">
+                    <div class="game-card__price"> € 69.99</div>
+                    <div class="game-card__name"> Elden Ring</div>
+                    <div class="game-card__platforms-list">
+                        <div class="game-card__platform"> PRE-ORDER</div>
+                        <div class="game-card__platform"> PS5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card">
+                <img class="game-card__img" srcset="img/common/kodzima.png, img/common/kodzima@2x.png 2x"
+                     src="img/common/kodzima.png" alt="Death Stranding">
+                <div class="game-card__data">
+                    <div class="game-card__price"> € 49.99</div>
+                    <div class="game-card__discount">
+                        <img srcset="img/main-page/discount.png, img/main-page/discount@2x.png 2x"
+                             src="img/main-page/discount.png" alt="Discount" class="game-card__discount-img">
+                        <div class="game-card__discount-price">10%</div>
+                    </div>
+                    <div class="game-card__name"> Death Stranding Director’s Cut Death Stranding Director’s Cut</div>
+                    <div class="game-card__platforms-list">
+                        <div class="game-card__platform"> PS5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card">
+                <img class="game-card__img" srcset="img/common/elden.png, img/common/elden@2x.png 2x"
+                     src="img/common/elden.png" alt="Elden Ring">
+                <div class="game-card__data">
+                    <div class="game-card__price"> € 69.99</div>
+                    <div class="game-card__name"> Elden Ring</div>
+                    <div class="game-card__platforms-list">
+                        <div class="game-card__platform"> PRE-ORDER</div>
+                        <div class="game-card__platform"> PS5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card">
+                <img class="game-card__img" srcset="img/common/kodzima.png, img/common/kodzima@2x.png 2x"
+                     src="img/common/kodzima.png" alt="Death Stranding">
+                <div class="game-card__data">
+                    <div class="game-card__price"> € 49.99</div>
+                    <div class="game-card__name"> Death Stranding Director’s Cut</div>
+                    <div class="game-card__platforms-list">
+                        <div class="game-card__platform"> PS5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card">
+                <img class="game-card__img" srcset="img/common/elden.png, img/common/elden@2x.png 2x"
+                     src="img/common/elden.png" alt="Elden Ring">
+                <div class="game-card__data">
+                    <div class="game-card__price"> € 69.99</div>
+                    <div class="game-card__discount">
+                        <img srcset="img/main-page/discount.png, img/main-page/discount@2x.png 2x"
+                             src="img/main-page/discount.png" alt="Discount" class="game-card__discount-img">
+                        <div class="game-card__discount-price">5%</div>
+                    </div>
+                    <div class="game-card__name"> Elden Ring</div>
+                    <div class="game-card__platforms-list">
+                        <div class="game-card__platform"> PRE-ORDER</div>
+                        <div class="game-card__platform"> PS5</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
