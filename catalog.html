@@ -40,7 +40,7 @@
 </div>
 <main class="main-section">
     <div class="sticky-elem nav-line__wrapper_sticky">
-        <nav class="nav-line sticky-elem"> <!-- Todo только навигационная линия должна быть sticky -->
+        <nav class="nav-line sticky-elem">
             <div class="nav-line__store-logo">
                 <img class="nav-line__store-bag"
                      srcset="img/common/playstation-bag.png, img/common/playstation-bag@2x.png 2x"
@@ -249,7 +249,6 @@
 
 
         <div id="panel-tag" class="catalog-content__tags-panel">
-            <!-- Todo add tags only after user select them -->
             <!--<div class="tag catalog-content__single-tag">
                 <div class="catalog-content__single-tag-text"> ACTION</div>
                 <button value="Action" onclick="remove_tag_and_checkbox(this);" class="catalog-content__single-tag-button"><i
@@ -266,7 +265,7 @@
         </div>
 
 
-        <div class="gallery">
+        <div class="gallery catalog-content__gallery">
             <!-- Todo: click on card must redirect to game page -->
             <div class="game-card">
                 <img class="game-card__img" srcset="img/common/elden.png, img/common/elden@2x.png 2x"
@@ -405,8 +404,69 @@
                 </div>
             </div>
         </div>
+        <div class="catalog-content__pagination">
+            <button type="button" onclick="<!-- Todo load new page, mark it as chosen -->"
+                    class="button-elem catalog-content__pagination-button catalog-content__pagination-button_chosen"
+                    value="1">1
+            </button>
+            <button type="button" onclick="<!-- Todo load new page, mark it as chosen -->"
+                    class="button-elem catalog-content__pagination-button" value="2">2
+            </button>
+            <button type="button" onclick="<!-- Todo load new page, mark it as chosen -->"
+                    class="button-elem catalog-content__pagination-button" value="3">3
+            </button>
+            <button type="button" onclick="<!-- Todo load new page, mark it as chosen -->"
+                    class="button-elem catalog-content__pagination-button" value="4">4
+            </button>
+            <button type="button" onclick="<!-- Todo load new page, mark it as chosen -->"
+                    class="button-elem catalog-content__pagination-button" value="5">5
+            </button>
+            <button type="button" onclick="<!-- Todo load new page, mark it as chosen -->"
+                    class="button-elem catalog-content__pagination-button catalog-content__pagination-button_big"
+                    value="Show more">Show more
+            </button>
+        </div>
     </section>
 </main>
-<footer></footer>
+<footer class="footer-section">
+    <div class="footer-section__content-wrapper">
+        <img class="footer-section__playstation-logo-img" src="img/common/playstation-logo.svg" alt="logo">
+        <div class="footer-section__links-block">
+            <ul class="footer-section__list_links">
+                <li><a class="footer-section__link" href="#">Support</a></li>
+                <li><a class="footer-section__link" href="#">Privacy and Cookies</a></li>
+                <li><a class="footer-section__link" href="#">Website Terms of Use</a></li>
+                <li><a class="footer-section__link" href="#">Sitemap</a></li>
+                <li><a class="footer-section__link" href="#">PlayStation Studios</a></li>
+                <li><a class="footer-section__link" href="#">Legal</a></li>
+                <li><a class="footer-section__link" href="#">About SIE</a></li>
+            </ul>
+            <ul class="footer-section__list_links">
+                <li><a class="footer-section__link" href="#">PSN Terms of Service</a></li>
+                <li><a class="footer-section__link" href="#">Software Usage Terms</a></li>
+                <li><a class="footer-section__link" href="#">PS Store Cancellation Policy</a></li>
+                <li><a class="footer-section__link" href="#">Health Warnings</a></li>
+                <li><a class="footer-section__link" href="#">About Ratings</a></li>
+            </ul>
+            <ul>
+                <li><a class="footer-section__link" href="#">Facebook</a></li>
+                <li><a class="footer-section__link" href="#">Twitter</a></li>
+                <li><a class="footer-section__link" href="#">YouTube</a></li>
+                <li><a class="footer-section__link" href="#">Instagram</a></li>
+                <li><a class="footer-section__link" href="#">Android App</a></li>
+                <li><a class="footer-section__link" href="#">iOS App</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section__geolocation-block">
+            <img class="footer-section__playstation-earth-img" src="img/common/earth-icon.svg" alt="earth icon">
+            <a class="footer-section__link footer-section__region-link" href="#">
+                <div>Country/Region: Ireland</div>
+                <i class="bi bi-chevron-right"></i>
+            </a> <!-- link in official site -->
+        </div>
+    </div>
+
+</footer>
 </body>
 </html>
