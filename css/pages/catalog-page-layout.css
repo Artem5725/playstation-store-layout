@@ -37,7 +37,7 @@ html, body {
 }
 
 /* header */
-.header-line__wrapper_sticky{
+.header-line__wrapper_sticky {
     --sticky-top: 0;
     margin: 0 -8px 0;
     background-color: black;
@@ -112,7 +112,8 @@ html, body {
 .nav-line__wrapper_sticky {
     --sticky-top: 96px;
     margin: 0 -28px 0;
-    background-color:  #0060d1;
+    background-color: #0060d1;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.26);
 }
 
 .nav-line {
@@ -193,6 +194,76 @@ html, body {
     width: 250px;
     transition: width 0.5s;
     outline: none;
+}
+
+.footer-section {
+    padding: 80px 56px 64px 44px; /* right/bottom/left, : 72/80/60 - 8(back) - 8 (blue padding) */
+
+}
+
+.footer-section * {
+    display: block;
+}
+
+.footer-section__content-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 224px;
+    /*background-color: red;/**/
+}
+
+.footer-section__playstation-logo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 83px;
+    height: 60px;
+}
+
+.footer-section__links-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 68px; /* cheat: not all are 68px */
+}
+
+.footer-section__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-section__link:hover {
+    color: dodgerblue;
+}
+
+.footer-section__geolocation-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 12px;
+}
+
+.footer-section__playstation-earth-img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-section__region-link {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 22px;
+    margin-top: 4px;/*(24px(img height) - 16px(text height))/2*/
+    line-height: 16px;
+    /* настройки ссылки: убрать подчеркивание изменить цвет текста + задать все размеры */
 }
 
 .sticky-elem {

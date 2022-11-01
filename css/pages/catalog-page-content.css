@@ -1,8 +1,7 @@
 /* Wrapper for content after nav */
 .catalog-content {
     clear: both;
-    padding: 21px 4px 39px; /* 32 - 28 = 4px left/right */
-    border: 2px dashed;
+    padding: 21px 4px 0; /* 32 - 28 = 4px left/right */
 }
 
 .catalog-content__header {
@@ -153,6 +152,7 @@
 .catalog-content__tags-panel {
     margin-left: 12px;
     margin-right: 12px;
+    margin-bottom: 24px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -192,6 +192,40 @@
     font-size: 12px;
     line-height: 14px;
     color: #91969B;
+}
+
+.catalog-content__gallery {
+    /* padding 32 is done with main-section (28px) and catalog-content (4px) */
+    margin-bottom: 24px;
+}
+
+.catalog-content__pagination {
+    margin-right: 12px;
+    margin-left: 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.catalog-content__pagination-button {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #E7ECF1;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.catalog-content__pagination-button_big {
+    flex-grow: 2; /* will take full free space */
+}
+
+.catalog-content__pagination-button_chosen{
+    border: none;
+    background-color: #F4F7FA;
 }
 
 /* variables for grid */
