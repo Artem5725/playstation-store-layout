@@ -13,7 +13,7 @@
     float: left;
 }
 
-/* Use js and onclick */
+/* Use js and onclick */ /* not used */
 .dropdown-list_hoverable_from-bot-slide:hover .dropdown-list__content_from-bot-slide { /* dropdown-list_hoverable_from-bot-slide drops on hover */
     top: 0;
     opacity: 1;
