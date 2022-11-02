@@ -71,7 +71,7 @@
         <div class="catalog-content__sort">
             <div class="dropdown-list__face-wrapper">
                 <div class="dropdown-list__face catalog-content__sort-elem"> New → Old</div>
-                <button onclick="show_list('sort');" type="button"
+                <button onclick="show_list.call(this, 'sort');" type="button"
                         class="dropdown-list__face-button catalog-content__sort-button"><i
                         class="bi bi-chevron-down"></i></button>
             </div>
@@ -92,12 +92,11 @@
             </div>
         </div>
 
-
         <div class="catalog-content__filter-panel">
             <div class="catalog-content__single-filter">
                 <div class="dropdown-list__face-wrapper">
                     <div class="dropdown-list__face catalog-content__sort-elem"> Genre</div>
-                    <button onclick="show_list('filter-genre');" type="button"
+                    <button onclick="show_list.call(this, 'filter-genre');" type="button"
                             class="dropdown-list__face-button catalog-content__sort-button"><i
                             class="bi bi-chevron-down"></i></button>
                 </div>
@@ -165,7 +164,7 @@
             <div class="catalog-content__single-filter">
                 <div class="dropdown-list__face-wrapper">
                     <div class="dropdown-list__face catalog-content__sort-elem"> Price</div>
-                    <button onclick="show_list('filter-price');" type="button"
+                    <button onclick="show_list.call(this, 'filter-price');" type="button"
                             class="dropdown-list__face-button catalog-content__sort-button"><i
                             class="bi bi-chevron-down"></i></button>
                 </div>
@@ -183,7 +182,7 @@
             <div class="catalog-content__single-filter">
                 <div class="dropdown-list__face-wrapper">
                     <div class="dropdown-list__face catalog-content__sort-elem"> Type</div>
-                    <button onclick="show_list('filter-type');" type="button"
+                    <button onclick="show_list.call(this, 'filter-type');" type="button"
                             class="dropdown-list__face-button catalog-content__sort-button"><i
                             class="bi bi-chevron-down"></i></button>
                 </div>
@@ -201,7 +200,7 @@
             <div class="catalog-content__single-filter">
                 <div class="dropdown-list__face-wrapper">
                     <div class="dropdown-list__face catalog-content__sort-elem"> Age rating</div>
-                    <button onclick="show_list('filter-age');" type="button"
+                    <button onclick="show_list.call(this, 'filter-age');" type="button"
                             class="dropdown-list__face-button catalog-content__sort-button"><i
                             class="bi bi-chevron-down"></i></button>
                 </div>
@@ -267,7 +266,7 @@
 
         <div class="gallery catalog-content__gallery">
             <!-- Todo: click on card must redirect to game page -->
-            <div class="game-card">
+            <div onclick="location.href='game-page1.html'" class="game-card">
                 <img class="game-card__img" srcset="img/common/elden.png, img/common/elden@2x.png 2x"
                      src="img/common/elden.png" alt="Elden Ring">
                 <div class="game-card__data">
@@ -279,7 +278,7 @@
                     </div>
                 </div>
             </div>
-            <div class="game-card">
+            <div onclick="location.href='game-page1.html'" class="game-card">
                 <img class="game-card__img" srcset="img/common/kodzima.png, img/common/kodzima@2x.png 2x"
                      src="img/common/kodzima.png" alt="Death Stranding">
                 <div class="game-card__data">
@@ -295,7 +294,7 @@
                     </div>
                 </div>
             </div>
-            <div class="game-card">
+            <div onclick="location.href='game-page1.html'" class="game-card">
                 <img class="game-card__img" srcset="img/common/elden.png, img/common/elden@2x.png 2x"
                      src="img/common/elden.png" alt="Elden Ring">
                 <div class="game-card__data">
@@ -307,7 +306,7 @@
                     </div>
                 </div>
             </div>
-            <div class="game-card">
+            <div onclick="location.href='game-page1.html'" class="game-card">
                 <img class="game-card__img" srcset="img/common/kodzima.png, img/common/kodzima@2x.png 2x"
                      src="img/common/kodzima.png" alt="Death Stranding">
                 <div class="game-card__data">
@@ -318,7 +317,7 @@
                     </div>
                 </div>
             </div>
-            <div class="game-card">
+            <div onclick="location.href='game-page1.html'" class="game-card">
                 <img class="game-card__img" srcset="img/common/elden.png, img/common/elden@2x.png 2x"
                      src="img/common/elden.png" alt="Elden Ring">
                 <div class="game-card__data">
@@ -335,7 +334,7 @@
                     </div>
                 </div>
             </div>
-            <div class="game-card">
+            <div onclick="location.href='game-page1.html'" class="game-card">
                 <img class="game-card__img" srcset="img/common/elden.png, img/common/elden@2x.png 2x"
                      src="img/common/elden.png" alt="Elden Ring">
                 <div class="game-card__data">
@@ -347,7 +346,7 @@
                     </div>
                 </div>
             </div>
-            <div class="game-card">
+            <div onclick="location.href='game-page1.html'" class="game-card">
                 <img class="game-card__img" srcset="img/common/kodzima.png, img/common/kodzima@2x.png 2x"
                      src="img/common/kodzima.png" alt="Death Stranding">
                 <div class="game-card__data">
@@ -363,7 +362,7 @@
                     </div>
                 </div>
             </div>
-            <div class="game-card">
+            <div onclick="location.href='game-page1.html'" class="game-card">
                 <img class="game-card__img" srcset="img/common/elden.png, img/common/elden@2x.png 2x"
                      src="img/common/elden.png" alt="Elden Ring">
                 <div class="game-card__data">
@@ -375,7 +374,7 @@
                     </div>
                 </div>
             </div>
-            <div class="game-card">
+            <div onclick="location.href='game-page1.html'" class="game-card">
                 <img class="game-card__img" srcset="img/common/kodzima.png, img/common/kodzima@2x.png 2x"
                      src="img/common/kodzima.png" alt="Death Stranding">
                 <div class="game-card__data">
@@ -386,7 +385,7 @@
                     </div>
                 </div>
             </div>
-            <div class="game-card">
+            <div onclick="location.href='game-page1.html'" class="game-card">
                 <img class="game-card__img" srcset="img/common/elden.png, img/common/elden@2x.png 2x"
                      src="img/common/elden.png" alt="Elden Ring">
                 <div class="game-card__data">

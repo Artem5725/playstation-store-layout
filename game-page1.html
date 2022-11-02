@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Game, page, playstation, store">
+    <meta name="description" content="Game page">
+    <link rel="stylesheet" href="css/common/lists.css">
+    <link rel="stylesheet" href="css/common/tags.css">
+    <link rel="stylesheet" href="css/common/buttons.css">
+    <link rel="stylesheet" href="css/common/gallery.css">
+    <link rel="stylesheet" href="css/pages/catalog-page-layout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+    <title>Title</title>
+</head>
+<body onload="basic_prepare_filter_panel()" class="catalog-body">
+<script type="text/javascript" src="js/common/lists.js"></script>
+<script type="text/javascript" src="js/pages/tags-panel-management.js"></script>
+<div class="img-wrapper_sticky">
+    <img class="img_sticky" src="img/common/sony.svg" alt="Sony">
+</div>
+<div class="sticky-elem header-line__wrapper_sticky">
+    <header class="header-line sticky-elem">
+        <img class="header-line__playstation-logo-img" src="img/common/playstation-logo.svg" alt="Logo">
+        <div class="header-line__user-acc">
+            <img class="header-line__user-img" src="img/common/kodzima.png" alt="Account avatar">
+            <div class="header-line__user-name"> User123</div>
+        </div>
+        <!--  Todo hidden block -->
+        <div class="header-line__dropdown-menu-block">TODO</div>
+        <button type="button" class="header-line__dropdown-button">
+            <i onclick="<!-- Todo show hidden block -->"
+               class="bi bi-chevron-double-down header-line__dropdown-icon"></i>
+        </button>
+    </header>
+</div>
+<main class="main-section">
+    <div class="sticky-elem nav-line__wrapper_sticky">
+        <nav class="nav-line sticky-elem">
+            <div class="nav-line__store-logo">
+                <img class="nav-line__store-bag"
+                     srcset="img/common/playstation-bag.png, img/common/playstation-bag@2x.png 2x"
+                     src="img/common/playstation-bag.png" alt="Bag icon">
+                <img class="nav-line__store-text"
+                     srcset="img/common/playstation-store.png, img/common/playstation-store@2x.png 2x"
+                     src="img/common/playstation-store.png" alt="Playstation Store">
+            </div>
+            <div class="nav-line__navigation-bar">
+                <a class="button-elem nav-line__navigation_elem" href="#">Latest</a>
+                <a class="button-elem nav-line__navigation_elem" href="#">Collections</a>
+                <a class="button-elem nav-line__navigation_elem" href="#">Deals</a>
+                <a class="button-elem nav-line__navigation_elem" href="#">PS5</a>
+                <a class="button-elem nav-line__navigation_elem" href="#">Subscriptions</a>
+                <a class="button-elem nav-line__navigation_elem" href="#">Browse</a>
+            </div>
+            <div class="nav-line__search-panel">
+                <button type="button" onclick="<!-- Todo searching -->" class="nav-line__search-button">
+                    <i class="bi bi-search nav-line__search-icon"></i>
+                </button>
+                <input class="nav-line__search-input" type="text" placeholder="Search">
+            </div>
+        </nav>
+    </div>
+
+</main>
+<footer class="footer-section">
+    <div class="footer-section__content-wrapper">
+        <img class="footer-section__playstation-logo-img" src="img/common/playstation-logo.svg" alt="logo">
+        <div class="footer-section__links-block">
+            <ul class="footer-section__list_links">
+                <li><a class="footer-section__link" href="#">Support</a></li>
+                <li><a class="footer-section__link" href="#">Privacy and Cookies</a></li>
+                <li><a class="footer-section__link" href="#">Website Terms of Use</a></li>
+                <li><a class="footer-section__link" href="#">Sitemap</a></li>
+                <li><a class="footer-section__link" href="#">PlayStation Studios</a></li>
+                <li><a class="footer-section__link" href="#">Legal</a></li>
+                <li><a class="footer-section__link" href="#">About SIE</a></li>
+            </ul>
+            <ul class="footer-section__list_links">
+                <li><a class="footer-section__link" href="#">PSN Terms of Service</a></li>
+                <li><a class="footer-section__link" href="#">Software Usage Terms</a></li>
+                <li><a class="footer-section__link" href="#">PS Store Cancellation Policy</a></li>
+                <li><a class="footer-section__link" href="#">Health Warnings</a></li>
+                <li><a class="footer-section__link" href="#">About Ratings</a></li>
+            </ul>
+            <ul>
+                <li><a class="footer-section__link" href="#">Facebook</a></li>
+                <li><a class="footer-section__link" href="#">Twitter</a></li>
+                <li><a class="footer-section__link" href="#">YouTube</a></li>
+                <li><a class="footer-section__link" href="#">Instagram</a></li>
+                <li><a class="footer-section__link" href="#">Android App</a></li>
+                <li><a class="footer-section__link" href="#">iOS App</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section__geolocation-block">
+            <img class="footer-section__playstation-earth-img" src="img/common/earth-icon.svg" alt="earth icon">
+            <a class="footer-section__link footer-section__region-link" href="#">
+                <div>Country/Region: Ireland</div>
+                <i class="bi bi-chevron-right"></i>
+            </a> <!-- link in official site -->
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>
