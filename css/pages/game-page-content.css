@@ -1,0 +1,158 @@
+.game-page-content {
+    clear: both;
+    padding: 16px 24px 0; /*52px - 28px = 24px*/
+    border: 2px dashed;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+}
+
+.game-page-content__main-img-block {
+    width: 100%;
+    padding: 32px;
+    background-image: url("../../img/game1-page/malenia.png");
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.game-page-content__main-img-buttons {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 468px; /* Todo variables for different sizes  468px - to Deluxe*/
+}
+
+.game-page-content__back-button {
+    display: flex;
+    gap: 8px;
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.game-page-content__heart-button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #302D2D;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #000000;
+    color: #302D2D;
+}
+
+.game-page-content__heart-button:hover {
+    border-color: #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+
+.game-page-content__game-buy-block {
+    width: 100%;
+}
+
+.game-page-content__game-buy-block-warning-imgs {
+    margin-top: -50px;
+    float: right;
+    display: flex;
+    gap: 8px;
+}
+
+.game-page-content__warning-img-wrapper {
+    background-color: #000000;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.game-page-content__warning-img{
+    border-radius: inherit;
+}
+
+.game-page-content__game-tags-line {
+    display: flex;
+    gap: 8px;
+}
+
+.game-page-content__game-tag {
+    padding: 8px 16px 0;
+    background-color: #000000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.game-page-content__game-price-block {
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+}
+
+.game-page-content__main-img-header{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.game-page-content__main-img-author{
+    margin-left: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.game-page-content__buy-button{
+    display: block;
+    margin-bottom: 12px;
+    padding: 16px 24px;
+    border: none;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.game-page-content__release-date{
+    margin-right: 16px; /* 32px - 16px */
+    opacity: 0.4;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.game-page-content__feature-line{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.game-page-content__feature{
+    width: 100%;
+    padding: 12px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+.game-page-content__feature-text{
+    margin-top: 22px;
+    margin-bottom: 4px; /*16 - 12 */
+    margin-left: 4px; /* 16 - 12 */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.game-page-content__editions-block{
+
+}

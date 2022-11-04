@@ -14,3 +14,38 @@
     color: #FFFFFF;
     background-color: #000000;
 }
+
+.button-elem_invert{
+    border-radius: 8px / 10px;
+    color: #FFFFFF;
+    background-color: #000000;
+    white-space: nowrap;
+}
+
+.button-elem_invert:hover {
+    color: #FFFFFF;
+    background-color: #404040;
+}
+
+.button-elem_invert:active {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.button-elem_game-page{
+    border-radius: 8px / 10px;
+    color: #FFFFFF;
+    background-color: #D63D00;
+    white-space: nowrap;
+}
+
+.button-elem_game-page:hover{
+    color: #FFFFFF;
+    background-color: #cc6600;
+}
+
+.button-elem_game-page:active{
+    color: #D63D00;
+    background-color: #FFFFFF;
+}
+
