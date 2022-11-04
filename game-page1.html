@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="css/common/buttons.css">
     <link rel="stylesheet" href="css/common/gallery.css">
     <link rel="stylesheet" href="css/pages/catalog-page-layout.css">
+    <link rel="stylesheet" href="css/pages/game-page-content.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
     <title>Title</title>
 </head>
 <body onload="basic_prepare_filter_panel()" class="catalog-body">
-<script type="text/javascript" src="js/common/lists.js"></script>
-<script type="text/javascript" src="js/pages/tags-panel-management.js"></script>
 <div class="img-wrapper_sticky">
     <img class="img_sticky" src="img/common/sony.svg" alt="Sony">
 </div>
@@ -63,6 +62,214 @@
         </nav>
     </div>
 
+    <div class="game-page-content">
+        <div class="game-page-content__main-img-block">
+            <div class="game-page-content__main-img-buttons">
+                <button type="button" onclick="location.href='catalog.html'"
+                        class="button-elem_invert game-page-content__back-button"><i class="bi bi-arrow-left"></i>
+                    Go back
+                </button>
+                <button type="button" onclick="changeHeart(this);" class="game-page-content__heart-button"><i
+                        class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="game-page-content__game-buy-block">
+                <div class="game-page-content__game-buy-block-warning-imgs">
+                    <div class="game-page-content__warning-img-wrapper">
+                        <img class="game-page-content__warning-img" src="img/common/pegi16.png"
+                             srcset="img/common/pegi16.png, img/common/pegi16@2x.png 2x"
+                             alt="pegi 16">
+                    </div>
+                    <div class="game-page-content__warning-img-wrapper">
+                        <img class="game-page-content__warning-img" src="img/common/violence.png"
+                             srcset="img/common/violence.png, img/common/violence@2x.png 2x"
+                             alt="violence">
+                    </div>
+                </div>
+                <div class="game-page-content__game-tags-line">
+                    <div class="game-page-content__game-tag">DELUXE EDITION</div>
+                    <div class="game-page-content__game-tag">PS5</div>
+                </div>
+                <div class="game-page-content__game-price-block">
+                    <div>
+                        <h1 class="game-page-content__main-img-header">Elden Ring Deluxe Edition</h1>
+                        <div class="game-page-content__main-img-author">Bandai Namco Entertainment Europe</div>
+                    </div>
+                    <div>
+                        <button type="button" class="button-elem_game-page game-page-content__buy-button">Pre-order €
+                            89.99
+                        </button>
+                        <div class="game-page-content__release-date">Coming 25 February 2022 at 03:00 GMT+3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-page-content__feature-line">
+            <div class="game-page-content__feature">
+                <img src="img/common/touch-icon.png" srcset="img/common/touch-icon.png, img/common/touch-icon@2x.png 2x"
+                     alt="touch icon">
+                <div class="game-page-content__feature-text">PS Plus required for online play</div>
+            </div>
+            <div class="game-page-content__feature">
+                <img src="img/common/world-icon.png" srcset="img/common/world-icon.png, img/common/world-icon@2x.png 2x"
+                     alt="world icon">
+                <div class="game-page-content__feature-text">Supports up to 4 online players with PS Plus</div>
+            </div>
+            <div class="game-page-content__feature">
+                <img class="game-page-content__feature-img" src="img/common/people-icon.png"
+                     srcset="img/common/people-icon.png, img/common/people-icon@2x.png 2x" alt="people icon">
+                <div class="game-page-content__feature-text">1 player</div>
+            </div>
+        </div>
+
+        <div class="game-page-content__editions-block">
+            <div class="game-page-content__edition">
+                <img src="img/game1-page/standart-edition.png"
+                     srcset="img/game1-page/standart-edition.png, img/game1-page/standart-edition@2x.png 2x"
+                     alt="standart edition">
+                <div>Standart Edition</div>
+                <ul>
+                    <li>Elden Ring</li>
+                    <li>
+                        <div>Adventure Guide</div>
+                        <i class="bi bi-question-circle"></i>
+                    </li>
+                    <li>
+                        <div>Bonus Gesture</div>
+                        <i class="bi bi-question-circle"></i>
+                    </li>
+                </ul>
+                <button type="button">Pre-order € 69.99</button>
+                <div>HEART</div>
+            </div>
+            <div class="game-page-content__edition">
+                <img src="img/game1-page/deluxe-edition.png"
+                     srcset="img/game1-page/deluxe-edition.png, img/game1-page/deluxe-edition@2x.png 2x"
+                     alt="deluxe edition">
+                <div>Deluxe Edition</div>
+                <ul>
+                    <li>Elden Ring</li>
+                    <li>Digital Artbook & Original Soundtrack</li>
+                    <li>
+                        <div>Adventure Guide</div>
+                        <i class="bi bi-question-circle"></i>
+                    </li>
+                    <li>
+                        <div>Bonus Gesture</div>
+                        <i class="bi bi-question-circle"></i>
+                    </li>
+                </ul>
+                <button type="button">Pre-order € 69.99</button>
+                <div>HEART</div>
+            </div>
+        </div>
+
+        <div class="game-page-content__video-block">
+            <!-- Todo insert video -->
+        </div>
+
+        <div class="game-page-content__description-blocks">
+            <div class="game-page-content__description-block">
+                <h1>The new fantasy action RPG</h1>
+                <div class="game-page-content__description-text-block">
+                    <div>
+                        <div>
+                            Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become
+                            an
+                            Elden
+                            Lord in the Lands Between.
+                        </div>
+                    </div>
+                    <div>
+                        <h3>A Vast World Full of Excitement</h3>
+                        <div>A vast world where open fields with a variety of situations and huge dungeons with complex
+                            and
+                            three-dimensional designs are seamlessly connected. As you explore, the joy of discovering
+                            unknown and overwhelming threats await you, leading to a high sense of accomplishment.
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Create your Own Character</h3>
+                        <div>
+                            In addition to customizing the appearance of your character, you can freely combine the
+                            weapons,
+                            armor, and magic that you equip. You can develop your character according to your play
+                            style,
+                            such as increasing your muscle strength to become a strong warrior, or mastering magic.
+                        </div>
+                    </div>
+                    <div>
+                        <h3> An Epic Drama Born from a Myth</h3>
+                        <div>
+                            A multilayered story told in fragments. An epic drama in which the various thoughts of the
+                            characters intersect in the Lands Between
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Unique Online Play that Loosely Connects You to Others</h3>
+                        <div>
+                            In addition to multiplayer, where you can directly connect with other players and travel
+                            together, the game supports a unique asynchronous online element that allows you to feel the
+                            presence of others.
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Unique Online Play that Loosely Connects You to Others</h3>
+                        <div>
+                            In addition to multiplayer, where you can directly connect with other players and travel
+                            together, the game supports a unique asynchronous online element that allows you to feel the
+                            presence of others.
+                        </div>
+                    </div>
+                    <div>
+                        If you already own the PS4™ version of this game, you can get the PS5™ digital version at no
+                        extra
+                        cost and you do not need to purchase this product. Owners of a PS4™ disc copy must insert it
+                        into
+                        the PS5™ every time they want to download or play the PS5™ digital version. PS4™ game disc
+                        owners
+                        who buy the PS5™ Digital Edition disc-free console will not be able to get the PS5™ version at
+                        no
+                        extra cost.
+                    </div>
+                </div>
+            </div>
+            <div class="game-page-content__description-block">
+                <h1>Pre-order information</h1>
+                <div class="game-page-content__description-text-block">
+                    <div>
+                        <div>
+                            For more information on pre-ordering, including how to cancel your pre-order, see the Sony
+                            Entertainment Network Terms of Service/User Agreement. Auto-download requires Automatic
+                            Login and Auto Sign-In to be enabled on your PS5™/PS4™ system.
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Pre-order now and get the following content as a bonus</h3>
+                        <div>
+                            Adventure Guide — contains useful information for the player's adventures in the Lands
+                            Between.
+                            Bonus Gesture — this is a gesture that can be used in-game.
+                        </div>
+                    </div>
+                    <div>
+                        <h3>The Deluxe Edition includes</h3>
+                        <div>
+                            Elden Ring — full game.
+                            Digital Artbook & Original Soundtrack — allows players to enjoy viewing concept art and
+                            listening to in-game music of ELDEN RING exclusive to the Deluxe Edition.
+                        </div>
+                    </div>
+                    <div>
+                        This product entitles you to download both the digital PS4™ version and the digital PS5™ version
+                        of this game.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </main>
 <footer class="footer-section">
     <div class="footer-section__content-wrapper">
@@ -104,5 +311,8 @@
     </div>
 
 </footer>
+<script type="text/javascript" src="js/common/lists.js"></script>
+<script type="text/javascript" src="js/pages/tags-panel-management.js"></script>
+<script type="text/javascript" src="js/pages/game-page-content.js"></script>
 </body>
 </html>
