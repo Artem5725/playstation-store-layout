@@ -123,44 +123,118 @@
         </div>
 
         <div class="game-page-content__editions-block">
-            <div class="game-page-content__edition">
-                <img src="img/game1-page/standart-edition.png"
-                     srcset="img/game1-page/standart-edition.png, img/game1-page/standart-edition@2x.png 2x"
-                     alt="standart edition">
-                <div>Standart Edition</div>
-                <ul>
-                    <li>Elden Ring</li>
-                    <li>
-                        <div>Adventure Guide</div>
-                        <i class="bi bi-question-circle"></i>
-                    </li>
-                    <li>
-                        <div>Bonus Gesture</div>
-                        <i class="bi bi-question-circle"></i>
-                    </li>
-                </ul>
-                <button type="button">Pre-order € 69.99</button>
-                <div>HEART</div>
-            </div>
-            <div class="game-page-content__edition">
-                <img src="img/game1-page/deluxe-edition.png"
-                     srcset="img/game1-page/deluxe-edition.png, img/game1-page/deluxe-edition@2x.png 2x"
-                     alt="deluxe edition">
-                <div>Deluxe Edition</div>
-                <ul>
-                    <li>Elden Ring</li>
-                    <li>Digital Artbook & Original Soundtrack</li>
-                    <li>
-                        <div>Adventure Guide</div>
-                        <i class="bi bi-question-circle"></i>
-                    </li>
-                    <li>
-                        <div>Bonus Gesture</div>
-                        <i class="bi bi-question-circle"></i>
-                    </li>
-                </ul>
-                <button type="button">Pre-order € 69.99</button>
-                <div>HEART</div>
+            <div class="game-page-content__edition-text">Editions</div>
+            <div class="game-page-content__editions-line">
+                <div class="game-page-content__edition">
+                    <img class="game-page-content__edition-img" src="img/game1-page/standart-edition.png"
+                         srcset="img/game1-page/standart-edition.png, img/game1-page/standart-edition@2x.png 2x"
+                         alt="standart edition">
+                    <h2 class="game-page-content__edition-name">Standart Edition</h2>
+                    <div class="game-page-content__edition-content-list">
+                        <div class="game-page-content__edition-content-elem">Elden Ring</div>
+                        <div class="game-page-content__edition-content-elem">
+                            Adventure Guide
+                            <span class="dropdown-list__content-wrapper">
+                                <i class="bi bi-question-circle game-page-content__edition-content-elem-question dropdown-list_hoverable_from-bot-slide"></i>
+                                <span class="game-page-content__edition-support-message dropdown-list__content dropdown-list__content_from-bot-slide"> Support msg</span>
+                            </span>
+                        </div>
+                        <div class="game-page-content__edition-content-elem">
+                            Bonus Gesture
+                            <span class="dropdown-list__content-wrapper">
+                                <i class="bi bi-question-circle game-page-content__edition-content-elem-question dropdown-list_hoverable_from-bot-slide"></i>
+                                <span class="game-page-content__edition-support-message dropdown-list__content dropdown-list__content_from-bot-slide"> Support msg</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="game-page-content__edition-buttons-line">
+                        <button type="button" class="button-elem_game-page game-page-content__edition-buy-button">
+                            Pre-order € 69.99
+                        </button>
+                        <button type="button" onclick="changeHeart(this);" class="game-page-content__heart-button"><i
+                                class="bi bi-heart-fill"></i></button>
+                    </div>
+                </div>
+                <div class="game-page-content__edition">
+                    <img class="game-page-content__edition-img" src="img/game1-page/deluxe-edition.png"
+                         srcset="img/game1-page/deluxe-edition.png, img/game1-page/deluxe-edition@2x.png 2x"
+                         alt="deluxe edition">
+                    <h2 class="game-page-content__edition-name">Deluxe Edition</h2>
+                    <div class="game-page-content__edition-content-list">
+                        <div class="game-page-content__edition-content-elem">Elden Ring</div>
+                        <div class="game-page-content__edition-content-elem">Digital Artbook & Original Soundtrack</div>
+                        <div class="game-page-content__edition-content-elem">
+                            Adventure Guide
+                            <span class="dropdown-list__content-wrapper">
+                                <i class="bi bi-question-circle game-page-content__edition-content-elem-question dropdown-list_hoverable_from-bot-slide"></i>
+                                <span class="game-page-content__edition-support-message dropdown-list__content dropdown-list__content_from-bot-slide"> Support msg</span>
+                            </span>
+                        </div>
+                        <div class="game-page-content__edition-content-elem">
+                            Bonus Gesture 1
+                            <span class="dropdown-list__content-wrapper">
+                                <i class="bi bi-question-circle game-page-content__edition-content-elem-question dropdown-list_hoverable_from-bot-slide"></i>
+                                <span class="game-page-content__edition-support-message dropdown-list__content dropdown-list__content_from-bot-slide"> Support msg</span>
+                            </span>
+                        </div>
+                        <div class="game-page-content__edition-content-elem">
+                            Bonus Gesture 2
+                            <span class="dropdown-list__content-wrapper">
+                                <i class="bi bi-question-circle game-page-content__edition-content-elem-question dropdown-list_hoverable_from-bot-slide"></i>
+                                <span class="game-page-content__edition-support-message dropdown-list__content dropdown-list__content_from-bot-slide"> Support msg</span>
+                            </span>
+                        </div>
+                        <div class="game-page-content__edition-content-elem">
+                            Bonus Gesture 3
+                            <span class="dropdown-list__content-wrapper">
+                                <i class="bi bi-question-circle game-page-content__edition-content-elem-question dropdown-list_hoverable_from-bot-slide"></i>
+                                <span class="game-page-content__edition-support-message dropdown-list__content dropdown-list__content_from-bot-slide"> Support msg</span>
+                            </span>
+                        </div>
+                        <div class="game-page-content__edition-content-elem">
+                            Bonus Gesture 4
+                            <span class="dropdown-list__content-wrapper">
+                                <i class="bi bi-question-circle game-page-content__edition-content-elem-question dropdown-list_hoverable_from-bot-slide"></i>
+                                <span class="game-page-content__edition-support-message dropdown-list__content dropdown-list__content_from-bot-slide"> Support msg</span>
+                            </span>
+                        </div>
+                        <div class="game-page-content__edition-content-elem">
+                            Bonus Gesture 5
+                            <span class="dropdown-list__content-wrapper">
+                                <i class="bi bi-question-circle game-page-content__edition-content-elem-question dropdown-list_hoverable_from-bot-slide"></i>
+                                <span class="game-page-content__edition-support-message dropdown-list__content dropdown-list__content_from-bot-slide"> Support msg</span>
+                            </span>
+                        </div>
+                        <div class="game-page-content__edition-content-elem">
+                            Bonus Gesture 6
+                            <span class="dropdown-list__content-wrapper">
+                                <i class="bi bi-question-circle game-page-content__edition-content-elem-question dropdown-list_hoverable_from-bot-slide"></i>
+                                <span class="game-page-content__edition-support-message dropdown-list__content dropdown-list__content_from-bot-slide"> Support msg</span>
+                            </span>
+                        </div>
+                        <div class="game-page-content__edition-content-elem">
+                            Bonus Gesture 7
+                            <span class="dropdown-list__content-wrapper">
+                                <i class="bi bi-question-circle game-page-content__edition-content-elem-question dropdown-list_hoverable_from-bot-slide"></i>
+                                <span class="game-page-content__edition-support-message dropdown-list__content dropdown-list__content_from-bot-slide"> Support msg</span>
+                            </span>
+                        </div>
+                        <div class="game-page-content__edition-content-elem">
+                            Bonus Gesture 8
+                            <span class="dropdown-list__content-wrapper">
+                                <i class="bi bi-question-circle game-page-content__edition-content-elem-question dropdown-list_hoverable_from-bot-slide"></i>
+                                <span class="game-page-content__edition-support-message dropdown-list__content dropdown-list__content_from-bot-slide"> Support msg</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="game-page-content__edition-buttons-line">
+                        <button type="button" class="button-elem_game-page game-page-content__edition-buy-button">
+                            Pre-order € 89.99
+                        </button>
+                        <button type="button" onclick="changeHeart(this);" class="game-page-content__heart-button"><i
+                                class="bi bi-heart-fill"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -169,8 +243,8 @@
         </div>
 
         <div class="game-page-content__description-blocks">
-            <div class="game-page-content__description-block">
-                <h1>The new fantasy action RPG</h1>
+            <div>
+                <div class="game-page-content__description-block-header">The new fantasy action RPG</div>
                 <div class="game-page-content__description-text-block">
                     <div>
                         <div>
@@ -234,8 +308,8 @@
                     </div>
                 </div>
             </div>
-            <div class="game-page-content__description-block">
-                <h1>Pre-order information</h1>
+            <div>
+                <h1 class="game-page-content__description-block-header">Pre-order information</h1>
                 <div class="game-page-content__description-text-block">
                     <div>
                         <div>
@@ -267,7 +341,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 </main>

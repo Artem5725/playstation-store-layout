@@ -13,11 +13,15 @@
     float: left;
 }
 
-/* Use js and onclick */ /* not used */
-.dropdown-list_hoverable_from-bot-slide:hover .dropdown-list__content_from-bot-slide { /* dropdown-list_hoverable_from-bot-slide drops on hover */
-    top: 0;
+.dropdown-list_hoverable_from-bot-slide:hover + .dropdown-list__content_from-bot-slide {
+    display: block;
+    top: 100%;
     opacity: 1;
     transition-duration: 0.5s;
+}
+
+.dropdown-list__content-wrapper{
+    position: relative;
 }
 
 .dropdown-list__content { /* for js hide script */
