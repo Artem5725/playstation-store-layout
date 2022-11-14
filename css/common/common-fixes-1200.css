@@ -1,0 +1,9 @@
+@media screen and (max-width: 1200px) {
+    .nav-line__search-input {
+       width: 250px;
+    }
+    .nav-line__search-input:focus {
+        width: 350px;
+    }
+}
+
