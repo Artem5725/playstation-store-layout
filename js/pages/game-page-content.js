@@ -7,3 +7,8 @@ function hoverHeart(element){
     element.style.color = "#FFFFFF";
     element.style.borderColor = "#FFFFFF";
 }
+
+/* Todo all buy-button must redirect to new buy page */
+for (let buyButton of document.getElementsByClassName('game-page-content__buy-button')){
+    buyButton.style.onclick = "location.href='catalog.html'";
+}
