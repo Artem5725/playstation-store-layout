@@ -71,7 +71,8 @@
                         class="button-elem_invert game-page-content__back-button"><i class="bi bi-arrow-left"></i>
                     Go back
                 </button>
-                <button type="button" onclick="changeHeart(this);" class="game-page-content__heart-button"><i
+                <button type="button" onmousedown="changeHeartClicked(this);" onmouseenter="changeHeartEnter(this);"
+                        onmouseleave="changeHeartOut(this);" class="game-page-content__heart-button"><i
                         class="bi bi-heart-fill"></i></button>
             </div>
             <div class="game-page-content__game-buy-block">
@@ -153,7 +154,9 @@
                         <button type="button" class="button-elem_game-page game-page-content__edition-buy-button">
                             Pre-order € 69.99
                         </button>
-                        <button type="button" onclick="changeHeart(this);" class="game-page-content__heart-button"><i
+                        <button type="button" onmousedown="changeHeartClicked(this);"
+                                onmouseenter="changeHeartEnter(this);" onmouseleave="changeHeartOut(this);"
+                                class="game-page-content__heart-button"><i
                                 class="bi bi-heart-fill"></i></button>
                     </div>
                 </div>
@@ -233,7 +236,9 @@
                         <button type="button" class="button-elem_game-page game-page-content__edition-buy-button">
                             Pre-order € 89.99
                         </button>
-                        <button type="button" onclick="changeHeart(this);" class="game-page-content__heart-button"><i
+                        <button type="button" onmousedown="changeHeartClicked(this);"
+                                onmouseenter="changeHeartEnter(this);" onmouseleave="changeHeartOut(this);"
+                                class="game-page-content__heart-button"><i
                                 class="bi bi-heart-fill"></i></button>
                     </div>
                 </div>
@@ -377,7 +382,7 @@
                 <li><a class="footer-section__link" href="#">Health Warnings</a></li>
                 <li><a class="footer-section__link" href="#">About Ratings</a></li>
             </ul>
-            <ul>
+            <ul class="footer-section__list_links">
                 <li><a class="footer-section__link" href="#">Facebook</a></li>
                 <li><a class="footer-section__link" href="#">Twitter</a></li>
                 <li><a class="footer-section__link" href="#">YouTube</a></li>

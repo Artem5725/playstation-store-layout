@@ -59,7 +59,7 @@
     margin-left: 12px;
     margin-right: 12px;
     margin-bottom: 16px;
-    height: 48px;
+    height: fit-content;
     border: 1px solid #E7ECF1;
     border-radius: 8px;
     display: flex;
@@ -68,12 +68,21 @@
     justify-content: start;
 }
 
+.catalog-content__filter-block{ /* wrapper for filters to adapt for 1200 px screen */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.catalog-content__filter-block-stretch{ /* last block should take whole free space */
+    flex-grow: 2;
+}
+
 .catalog-content__single-filter {
     /* позиционирование внутри блока фильтров */
     position: relative;
-    width: fit-content;
     height: 100%;
-    border-right: inherit;
+    border-right: 1px solid #E7ECF1;
     padding: 8px 16px;
 }
 
@@ -132,7 +141,7 @@
 
 .catalog-content_small-vertical-line {
     height: 16px;
-    width: 1px;
+    width: 0;
     border-right: 1px solid #E7ECF1;
     margin-top: 16px;
 }

@@ -28,7 +28,8 @@
     display: none;
     clear: both;
     z-index: 1;
-    width: max-content;
+    min-width: max-content;
+    width: 100%;
 }
 
 .dropdown-list__content_from-bot-slide {

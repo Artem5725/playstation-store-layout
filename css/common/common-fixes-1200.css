@@ -1,9 +1,57 @@
 @media screen and (max-width: 1200px) {
+    /* Adaptive navigation panel */
     .nav-line__search-input {
-       width: 250px;
+        width: 250px;
     }
+
     .nav-line__search-input:focus {
         width: 350px;
     }
+    /*====================*/
+
+    /* Adaptive filter panel */
+    .catalog-content__filter-panel {
+        flex-direction: column;
+    }
+
+    .catalog-content__single-filter {
+        border-bottom: 1px solid #E7ECF1;
+    }
+
+    .catalog-content__filter-block .catalog-content__single-filter {
+        width: 25%;
+    }
+
+    .catalog-content__filter-block:first-child > .catalog-content__single-filter:last-child {
+        border-right: none;
+    }
+
+    .catalog-content__filter-block /*> .catalog-content__single-filter >*/ .dropdown-list__face-wrapper{
+        justify-content: space-between;
+    }
+    /*====================*/
+
+    /* Adaptive game description */
+    .game-page-content__description-blocks{
+        padding-right: 32px;
+    }
+
+    .game-page-content__description-block{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .game-page-content__description-block-header1{
+        width: 100%;
+    }
+    /*====================*/
+
+    /* Adaptive footer */
+    .footer-section__content-wrapper{
+        grid-template-areas: "I" "L" "G";
+        grid-gap: 16px;
+        height: fit-content;
+    }
+    /*====================*/
 }
 

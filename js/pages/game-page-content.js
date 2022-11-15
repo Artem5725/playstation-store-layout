@@ -1,11 +1,30 @@
-function changeHeart(element) {
-    element.style.color = (element.style.color === "rgb(204, 0, 0)") ? "#302D2D" : " rgb(204, 0, 0)";
-    element.style.borderColor = (element.style.borderColor === "rgb(204, 0, 0)") ? "#302D2D" : " rgb(204, 0, 0)";
+function changeHeartClicked(element) {
+    if(element.clickedMy === true){
+        element.clickedMy = false;
+        element.style.color = "#302D2D";
+        element.style.borderColor = "#302D2D";
+    }
+    else{
+        element.clickedMy = true;
+        element.style.color = "#FF0000";
+        element.style.borderColor = "#FF0000";
+    }
 }
 
-function hoverHeart(element){
+function changeHeartEnter(element) {
     element.style.color = "#FFFFFF";
     element.style.borderColor = "#FFFFFF";
+}
+
+function changeHeartOut(element){
+    if(element.clickedMy === true){
+        element.style.color = "#FF0000";
+        element.style.borderColor = "#FF0000";
+    }
+    else{
+        element.style.color = "#302D2D";
+        element.style.borderColor = "#302D2D";
+    }
 }
 
 /* Todo all buy-button must redirect to new buy page */
