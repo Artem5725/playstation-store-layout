@@ -1,7 +1,6 @@
 .game-page-content {
     clear: both;
     padding: 16px 24px 0; /*52px - 28px = 24px*/
-    border: 2px dashed;
     display: flex;
     flex-flow: column nowrap;
     gap: 16px;
@@ -13,6 +12,8 @@
     padding: 32px;
     background-image: url("../../img/game1-page/malenia.png");
     background-size: cover;
+    background-position: 75% 50%; /* better look image with small width */
+    background-repeat: no-repeat;
     border-radius: var(--border-blocks-radius);
 }
 
@@ -42,11 +43,6 @@
     padding: 8px;
     background-color: #000000;
     color: #302D2D;
-}
-
-.game-page-content__heart-button:hover {
-    border-color: #FFFFFF !important;
-    color: #FFFFFF !important;
 }
 
 .game-page-content__game-buy-block {
@@ -240,8 +236,8 @@
 }
 
 .game-page-content__description-blocks {
-    padding-left: 32px; /* 84 - 52 */ /* Todo change on screen width changes */
-    padding-right: 224px; /* 276 - 52 */
+    padding-left: 32px; /* 84 - 52 */
+    padding-right: 10%; /* 276 - 52 */ /* Todo layout 224px */
     margin-top: 64px;
     display: flex;
     flex-flow: column nowrap;
@@ -250,19 +246,19 @@
 
 .game-page-content__description-block {
     display: flex;
-    flex-flow: row nowrap; /* Todo on mobile layout flex-direction column */
-    gap: 56px; /* Todo change on screen width changes */
+    flex-flow: row nowrap;
+    gap: 56px;
 }
 
 .game-page-content__description-text-block {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    gap: 32px; /* todo cheat: 2 places, where gap = 60px  */
+    gap: 32px;
 }
 
 .game-page-content__description-block-header1 {
-    width: 70%; /* Todo change on screen width changes */
+    width: 70%;
     font-weight: 600;
     font-size: 48px;
     line-height: 56px;
