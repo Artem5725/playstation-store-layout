@@ -1,4 +1,4 @@
-function basic_prepare_filter_panel() {
+function onloadFilterPanel() {
     // checkboxes
     let elems = document.getElementsByClassName('catalog-content__filter-elem-checkbox');
     for (let elem of elems) {

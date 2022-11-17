@@ -3,11 +3,7 @@ function show_list(elem) {
     hide_all_lists(content);
     if (content.style.display !== "block") {
         content.style.display = "block";
-        /* !!! add arguments to callback function via bind
-            1st param (null) will be used as this in function
-            other params - arguments of function
-         */
-        setTimeout(callback_show_list.bind(null, content), 1) // little delay between make content display as block, and animate it
+        setTimeout(callbackShowList.bind(null, content), 1); // little delay between make content display as block, and animate it
 
         // rotate button
         rotateButton(this, 180);
@@ -16,7 +12,8 @@ function show_list(elem) {
     }
 }
 
-function callback_show_list(content) {
+function callbackShowList(content) {
+
     content.style.top = "100%";
     content.style.opacity = "1";
     content.style.transition = "top 0.5s";

@@ -237,7 +237,7 @@
 
 .game-page-content__description-blocks {
     padding-left: 32px; /* 84 - 52 */
-    padding-right: 10%; /* 276 - 52 */ /* Todo layout 224px */
+    padding-right: 10%; /* 276 - 52 */ /* layout 224px */
     margin-top: 64px;
     display: flex;
     flex-flow: column nowrap;
