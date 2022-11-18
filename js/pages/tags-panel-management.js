@@ -1,28 +1,3 @@
-function onloadFilterPanel() {
-    // clean
-    removeAllTags();
-    // checkboxes
-    document.body.addEventListener('change', listTagsCallback);
-    // buttons
-    document.body.addEventListener('click', listButtonsCallback);
-}
-
-function listTagsCallback(obj) {
-    if (obj.target.className.includes('catalog-content__filter-elem-checkbox')) {
-        obj.target.checked ? addTag(obj.target.value) : removeTagByValue(obj.target.value);
-    }
-}
-
-function listButtonsCallback(obj) {
-    if (obj.target.className.includes('catalog-content__filter-button')) {
-        if (!checkTagIsSet(obj.target)) {
-            addTag(obj.target.value);
-        }
-    } else if (obj.target.className.includes('bi bi-x')) {
-        removeTagAndCheckboxCallback(obj.target.parentElement);
-    }
-}
-
 function Tag(valueOfTagRemoveButton) {
     let tag = document.createElement('div');
     tag.className = "tag catalog-content__single-tag";
@@ -56,7 +31,7 @@ function removeTagElement(tagElement) {
 
 function dropCheckbox(valueOfCheckbox) {// there are 2 catalog-content__filter-block, but only in first there are checkboxes
     let checkbox = document.getElementsByClassName('catalog-content__filter-block')[0].querySelector(`[value="${valueOfCheckbox}"]`);
-    if(checkbox) { // buttons will have null, as they have no checkboxes
+    if (checkbox) { // buttons will have null, as they have no checkboxes
         checkbox.checked = false;
     }
 }

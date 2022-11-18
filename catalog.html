@@ -71,12 +71,16 @@
         <div class="catalog-content__sort">
             <div class="dropdown-list__face-wrapper">
                 <div class="dropdown-list__face catalog-content__sort-elem"> New → Old</div>
-                <button onclick="show_list.call(this, 'sort');" type="button"
+                <button type="button"
                         class="dropdown-list__face-button catalog-content__sort-button"><i
                         class="bi bi-chevron-down"></i></button>
             </div>
-            <div id="sort" onmouseleave="hide_list(this);"
+            <div id="sort" onmouseleave="hideList(this);"
                  class="dropdown-list__content dropdown-list__content_from-bot-slide catalog-content__sort-content">
+                <button type="button" onclick="<!-- Todo: sort -->"
+                        class="button-elem dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
+                    New → Old
+                </button>
                 <button type="button" onclick="<!-- Todo: sort -->"
                         class="button-elem dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
                     Old → New
@@ -97,11 +101,11 @@
                 <div class="catalog-content__single-filter">
                     <div class="dropdown-list__face-wrapper">
                         <div class="dropdown-list__face catalog-content__sort-elem"> Genre</div>
-                        <button onclick="show_list.call(this, 'filter-genre');" type="button"
+                        <button type="button"
                                 class="dropdown-list__face-button catalog-content__sort-button"><i
                                 class="bi bi-chevron-down"></i></button>
                     </div>
-                    <div id="filter-genre" onmouseleave="hide_list(this);"
+                    <div id="filter-genre" onmouseleave="hideList(this);"
                          class="dropdown-list__content dropdown-list__content_from-bot-slide catalog-content__sort-content">
                         <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
                             <input id="action-single-filter" type="checkbox"
@@ -165,11 +169,11 @@
                 <div class="catalog-content__single-filter">
                     <div class="dropdown-list__face-wrapper">
                         <div class="dropdown-list__face catalog-content__sort-elem"> Price</div>
-                        <button onclick="show_list.call(this, 'filter-price');" type="button"
+                        <button type="button"
                                 class="dropdown-list__face-button catalog-content__sort-button"><i
                                 class="bi bi-chevron-down"></i></button>
                     </div>
-                    <div id="filter-price" onmouseleave="hide_list(this);"
+                    <div id="filter-price" onmouseleave="hideList(this);"
                          class="dropdown-list__content dropdown-list__content_from-bot-slide catalog-content__sort-content">
                         <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
                             <input id="$20.00 - 29.00-single-filter" type="checkbox"
@@ -184,11 +188,11 @@
                 <div class="catalog-content__single-filter">
                     <div class="dropdown-list__face-wrapper">
                         <div class="dropdown-list__face catalog-content__sort-elem"> Type</div>
-                        <button onclick="show_list.call(this, 'filter-type');" type="button"
+                        <button type="button"
                                 class="dropdown-list__face-button catalog-content__sort-button"><i
                                 class="bi bi-chevron-down"></i></button>
                     </div>
-                    <div id="filter-type" onmouseleave="hide_list(this);"
+                    <div id="filter-type" onmouseleave="hideList(this);"
                          class="dropdown-list__content dropdown-list__content_from-bot-slide catalog-content__sort-content">
                         <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
                             <input id="alpha-single-filter" type="checkbox"
@@ -202,11 +206,11 @@
                 <div class="catalog-content__single-filter">
                     <div class="dropdown-list__face-wrapper">
                         <div class="dropdown-list__face catalog-content__sort-elem"> Age rating</div>
-                        <button onclick="show_list.call(this, 'filter-age');" type="button"
+                        <button type="button"
                                 class="dropdown-list__face-button catalog-content__sort-button"><i
                                 class="bi bi-chevron-down"></i></button>
                     </div>
-                    <div id="filter-age" onmouseleave="hide_list(this);"
+                    <div id="filter-age" onmouseleave="hideList(this);"
                          class="dropdown-list__content dropdown-list__content_from-bot-slide catalog-content__sort-content">
                         <div class="dropdown-list__elem catalog-content__sort-elem catalog-content__sort-elem-content">
                             <input id="18+-single-filter" type="checkbox"
@@ -470,12 +474,14 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="js/common/onload.js"></script>
 <script type="text/javascript" src="js/common/lists.js"></script>
 <script type="text/javascript" src="js/common/cookies.js"></script>
 <script type="text/javascript" src="js/pages/tags-panel-management.js"></script>
 <script>
-    function onloadInit(){
+    function onloadInit() {
         onloadFilterPanel();
+        onloadButtons();
         onloadCookies();
     }
 </script>

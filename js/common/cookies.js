@@ -1,12 +1,3 @@
-function onloadCookies() {
-    var name = searchCookie("AccountName");
-    if (!name) {
-        name = prompt("Enter name") ?? "DEFAULT_NAME";
-        addCookie("AccountName", name);
-    }
-    document.getElementsByClassName('header-line__user-name')[0].innerText = name;
-}
-
 function addCookie(cname, cvalue) {
     document.cookie = `${cname}=${cvalue};`; // expires on browser reload
 }
