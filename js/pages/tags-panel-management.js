@@ -1,60 +1,85 @@
 function onloadFilterPanel() {
+    // clean
+    removeAllTags();
     // checkboxes
-    let elems = document.getElementsByClassName('catalog-content__filter-elem-checkbox');
-    for (let elem of elems) {
-        elem.addEventListener('change', function () {
-            if (this.checked) {
-                add_tag(this);
-            } else {
-                remove_tag(this);
-            }
-        })
-    }
+    document.body.addEventListener('change', listTagsCallback);
     // buttons
-    elems = document.getElementsByClassName("catalog-content__filter-button");
-    for (let elem of elems) {
-        elem.addEventListener('click', function () {
-            if (!check_tag_is_set(this)) {
-                add_tag(this);
-            }
-        })
+    document.body.addEventListener('click', listButtonsCallback);
+}
+
+function listTagsCallback(obj) {
+    if (obj.target.className.includes('catalog-content__filter-elem-checkbox')) {
+        obj.target.checked ? addTag(obj.target.value) : removeTagByValue(obj.target.value);
     }
 }
 
-
-function add_tag(elem) {
-    document.getElementById("panel-tag").innerHTML = make_tag(elem.value) + document.getElementById("panel-tag").innerHTML;
-}
-
-function remove_tag(elem) {
-    document.getElementById("panel-tag").innerHTML = document.getElementById("panel-tag").innerHTML.replace(make_tag(elem.value), "");
-}
-
-function drop_checkbox(elem) {
-    let elem_to_drop = document.getElementById(elem.value.toLowerCase() + "-single-filter")
-    if (elem_to_drop !== null && elem_to_drop.tagName.toLowerCase() === "input") // buttons in filter panel hae no ids
-    {
-        elem_to_drop.checked = false;
+function listButtonsCallback(obj) {
+    if (obj.target.className.includes('catalog-content__filter-button')) {
+        if (!checkTagIsSet(obj.target)) {
+            addTag(obj.target.value);
+        }
+    } else if (obj.target.className.includes('bi bi-x')) {
+        removeTagAndCheckboxCallback(obj.target.parentElement);
     }
 }
 
-function remove_tag_and_checkbox(elem) {
-    remove_tag(elem);
-    drop_checkbox(elem);
-
+function Tag(valueOfTagRemoveButton) {
+    let tag = document.createElement('div');
+    tag.className = "tag catalog-content__single-tag";
+    let name = document.createElement('div');
+    name.className = "catalog-content__single-tag-text";
+    name.appendChild(document.createTextNode(valueOfTagRemoveButton.toUpperCase()));
+    let btn = document.createElement('button');
+    btn.value = valueOfTagRemoveButton;
+    btn.className = "catalog-content__single-tag-button";
+    let icon = document.createElement('i');
+    icon.className = "bi bi-x";
+    btn.appendChild(icon);
+    tag.appendChild(name);
+    tag.appendChild(btn);
+    return tag;
 }
 
-function remove_all_tags() {
-    let all_chosen_tags = document.getElementsByClassName('catalog-content__single-tag-button'); // like press all close buttons
-    while (all_chosen_tags.length !== 0) { // can't use for, because after element is deleted iterator will skip one element each iteration
-        remove_tag_and_checkbox(all_chosen_tags[0]);
+function addTag(valueOfTagRemoveButton) {
+    let cleanButton = document.getElementsByClassName('catalog-content__clean-tags-button')[0];
+    document.getElementById("panel-tag").insertBefore(Tag(valueOfTagRemoveButton), cleanButton);
+}
+
+function removeTagByValue(valueOfTagRemoveButton) {
+    let tagElement = document.getElementById("panel-tag").querySelector(`[value="${valueOfTagRemoveButton}"]`).parentElement;
+    removeTagElement(tagElement);
+}
+
+function removeTagElement(tagElement) {
+    document.getElementById("panel-tag").removeChild(tagElement);
+}
+
+function dropCheckbox(valueOfCheckbox) {// there are 2 catalog-content__filter-block, but only in first there are checkboxes
+    let checkbox = document.getElementsByClassName('catalog-content__filter-block')[0].querySelector(`[value="${valueOfCheckbox}"]`);
+    if(checkbox) { // buttons will have null, as they have no checkboxes
+        checkbox.checked = false;
     }
 }
 
-function make_tag(elem_value) {
-    return `<div class="tag catalog-content__single-tag"><div class="catalog-content__single-tag-text"> ${elem_value.toUpperCase()}</div><button value="${elem_value}" onclick="remove_tag_and_checkbox(this);" class="catalog-content__single-tag-button"><i class="bi bi-x"></i></button></div>`;
+function removeTagAndCheckboxCallback(buttonRemoveElement) {
+    removeTagElement(buttonRemoveElement.parentElement);
+    dropCheckbox(buttonRemoveElement.value);
 }
 
-function check_tag_is_set(elem) {
-    return (document.getElementById("panel-tag").innerHTML.indexOf(elem.value.toUpperCase()) !== -1);
+function removeAllTags() {
+    // remove tags
+    let allTags = document.getElementsByClassName('catalog-content__single-tag');
+    while (allTags.length !== 0) { // can't use for, because after element is deleted iterator will skip one element each iteration
+        removeTagElement(allTags[0]);
+    }
+    // remove checks
+    let allCheckBoxes = document.getElementsByClassName('catalog-content__filter-elem-checkbox');
+    for (let checkBox of allCheckBoxes) {
+        checkBox.checked = false;
+    }
+}
+
+function checkTagIsSet(buttonAddElement) {
+    let valueOfTagRemoveButton = buttonAddElement.value;
+    return document.getElementById("panel-tag").querySelector(`[value="${valueOfTagRemoveButton}"]`);
 }
